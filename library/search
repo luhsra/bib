@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+import re
+import sys
+import yaml
+import os.path
+import argparse
+
+
+DATABASE_FILE = os.path.join(os.path.dirname(__file__), "library.myml")
+
+parser = argparse.ArgumentParser(description='Search the library.')
+parser.add_argument('terms', metavar='TERM', type=str, nargs='+',
+                    help='Search Terms')
+
+parser.add_argument('--sort', '-s', action='store_true',
+                    help='Sort results by ID')
+
+args = parser.parse_args()
+
+records = yaml.load_all(open(DATABASE_FILE))
+
+for term in args.terms:
+    filtered = []
+    if ':' in term or '=' in term:
+        key_key, term = re.split('[:=]', term, 1)
+        # I Hate python scoping rules
+        key = lambda record: record.get(key_key, "")
+    else:
+        key = lambda record: str(record)
+
+    for record in records:
+        if term.lower() in key(record).lower():
+            filtered.append(record)
+    records = filtered
+
+if args.sort:
+    records = sorted(records, key=lambda record: record.get('ID'))
+
+
+
+yaml.dump_all(records, sys.stdout, allow_unicode=True, default_flow_style=False)
+sys.stdout.flush()
+sys.stderr.write("\n\nFound Records: %d\n"%len(records))

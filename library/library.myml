@@ -10087,3 +10087,51 @@ title: Robotic Systems for Handling and Assembly
 topic: Systeme, Systementwurf
 type: article
 year: 2010
+---
+ID: BS 58
+author: Pavel Yosifovich, Alex Ionescu, Mark E. Russinovich, David A. Solomon
+location: IB
+title: Windows Internals Part 1
+topic: Betriebssysteme
+type: book
+year: 2017
+---
+ID: BS 59
+author: Alex Ionescu, Mark Russinovich, David A. Solomon
+location: IB
+title: Windows Internals Part 2
+topic: Betriebssysteme
+type: book
+year: 2012
+---
+ID: SyS 20
+author: Dieter Zöbel
+location: IB
+title: Echtzeitsysteme
+topic: Systeme, Systementwurf
+type: book
+year: 2008
+---
+ID: SyS 21
+author: Herman Kopetz
+location: IB
+title: Real-Time Systems
+topic: Systeme, Systementwurf
+type: book
+year: 2011
+---
+ID: BS 60
+author: Amit Singh
+location: IB
+title: Mac OS X Internals Volume 1
+topic: Betriebssysteme
+type: book
+year: 2010
+---
+ID: BS 60
+author: Amit Singh
+location: IB
+title: Mac OS X Internals Volume 2
+topic: Betriebssysteme
+type: book
+year: 2010

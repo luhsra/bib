@@ -34,6 +34,8 @@ for term in args.terms:
             filtered.append(record)
     records = filtered
 
+
+
 if args.sort:
     records = sorted(records, key=lambda record: record.get('ID'))
 

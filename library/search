@@ -16,31 +16,74 @@ parser.add_argument('terms', metavar='TERM', type=str, nargs='+',
 parser.add_argument('--sort', '-s', action='store_true',
                     help='Sort results by ID')
 
+parser.add_argument('--table', '-t', action='store_true',
+                    help='Print as a table')
+
+
 args = parser.parse_args()
 
 records = yaml.load_all(open(DATABASE_FILE))
 
-for term in args.terms:
-    filtered = []
-    if ':' in term or '=' in term:
-        key_key, term = re.split('[:=]', term, 1)
-        # I Hate python scoping rules
-        key = lambda record: record.get(key_key, "")
-    else:
-        key = lambda record: str(record)
+table_fields = ['ID', 'title', 'author', 'year']
+filtered = []
+for record in records:
+    use_it = True
+    for term in args.terms:
+        if ':' in term or '=' in term:
+            key_key, term = re.split('[:=]', term, 1)
+            # I Hate python scoping rules
+            key = lambda record: record.get(key_key, "")
+            if key_key not in table_fields:
+                table_fields.append(key_key)
+        else:
+            key = lambda record: str(record)
 
-    for record in records:
-        if term.lower() in key(record).lower():
-            filtered.append(record)
+        NOT = False
+        if term[0] == '!':
+           NOT = True
+           term = term[1:]
+        match = term.lower() in key(record).lower()
+        if (NOT and match) or (not NOT and not match):
+            use_it = False
+    if use_it:
+        filtered.append(record)
+if args.terms:
     records = filtered
+
+
+def normalize_id(x):
+    a = ['a']
+    for c in x:
+        if c.isdigit():
+            if a[-1][0].isdigit():
+                a[-1] += c
+            else:
+                a[-1] = a[-1].strip().lower()
+                a.append(c)
+        else:
+            if a[-1][0].isdigit():
+                a[-1] = int(a[-1])
+                a.append(c)
+            else:
+                a[-1] += c
+
+    if a[-1][0].isdigit():
+        a[-1] = int(a[-1])
+    return a
 
 
 
 if args.sort:
-    records = sorted(records, key=lambda record: record.get('ID'))
+    records = sorted(records, key=lambda record: normalize_id(record.get('ID')))
 
-
-
-yaml.dump_all(records, sys.stdout, allow_unicode=True, default_flow_style=False)
-sys.stdout.flush()
-sys.stderr.write("\n\nFound Records: %d\n"%len(records))
+if args.table:
+    def row(seq):
+        print('|' + '|'.join(seq) + '|')
+    row(table_fields)
+    for record in records:
+        fields = [str(record.get(x,'')) for x in table_fields]
+        row(fields)
+else:
+    yaml.dump_all(records, sys.stdout, allow_unicode=True, default_flow_style=False)
+    sys.stdout.flush()
+    sys.stderr.write("\n\nFound Records: %d\n"%len(records))

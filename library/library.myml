@@ -4477,7 +4477,7 @@ year: 1968
 ---
 ID: GET2
 author: Mann, Schiffelgen, Froriep
-location: CB
+location: IB
 title: Einführung in die Regelungstechnik
 topic: Grundlagen ET
 type: article
@@ -4679,7 +4679,7 @@ year: 2008
 ---
 ID: GrI34
 author: Weizenbaum
-location: IB
+location: CB
 title: Computer Power and Human Resources
 topic: Grundlagen Informatik
 type: book
@@ -4735,7 +4735,7 @@ year: 1990
 ---
 ID: HLI10
 author: E. Hörbst, C. Müller-Schloer, H. Schwärtzel
-location: IB
+location: CB
 title: VENUS
 topic: HL-Technologie IC
 type: article
@@ -4799,7 +4799,7 @@ year: 1996
 ---
 ID: HLI5
 author: R.Müller
-location: IB
+location: CB
 title: Bauelemente der Halbleiter-Elektronik
 topic: HL-Technologie IC
 type: article
@@ -4807,7 +4807,7 @@ year: 1973
 ---
 ID: HLI6
 author: S.M.Sze
-location: IB
+location: CB
 title: Physics of Semiconductor Devices
 topic: HL-Technologie IC
 type: article
@@ -4823,7 +4823,7 @@ year: 1985
 ---
 ID: HLI8
 author: E.Hörbst, M.Nett, H.Schwärtzel
-location: IB
+location: CB
 title: 'VENUS: Entwurf von VLSI-Schaltungen'
 topic: HL-Technologie IC
 type: article
@@ -6289,7 +6289,7 @@ year: 1989
 ---
 ID: NA13
 author: Mitchel Resnick
-location: IB
+location: CB
 title: Turtles, Termites, and Traffic Jams
 topic: Naturanaloge Verfahren
 type: article
@@ -6329,7 +6329,7 @@ year: 1987
 ---
 ID: NA18
 author: Claus Emmeche
-location: IB
+location: CB
 title: The Garden in The Machine The Emerging Science of Artificial Life
 topic: Naturanaloge Verfahren
 type: article
@@ -6345,7 +6345,7 @@ year: 1995
 ---
 ID: NA2
 author: Ingo Rechneberg, M.Eigen
-location: IB
+location: CB
 title: Evolutionsstrategie
 topic: Naturanaloge Verfahren
 type: article
@@ -6353,7 +6353,7 @@ year: 1973
 ---
 ID: NA20
 author: Rodney,A., Brooks, Maes, Pattie
-location: IB
+location: CB
 title: Artificial Life IV, 1994
 topic: Naturanaloge Verfahren
 type: article
@@ -6385,7 +6385,7 @@ year: 1985
 ---
 ID: NA24
 author: David B. Fogel
-location: IB
+location: CB
 title: Evolutionary Computation
 topic: Naturanaloge Verfahren
 type: article
@@ -6433,7 +6433,7 @@ year: 1995
 ---
 ID: NA3
 author: Erich Jantsch
-location: IB
+location: CB
 title: Die Selbstorganisation des Universums
 topic: Naturanaloge Verfahren
 type: article
@@ -6457,7 +6457,7 @@ year: 1993
 ---
 ID: NA32
 author: Erwin Schrödinger
-location: IB
+location: CB
 title: Was ist Leben?
 topic: Naturanaloge Verfahren
 type: article
@@ -6569,7 +6569,7 @@ year: 2002
 ---
 ID: NA47
 author: Herbert A. Simon
-location: IB
+location: CB
 title: The Sciences of the Artificial
 topic: Naturanaloge Verfahren
 type: article
@@ -6593,7 +6593,7 @@ year: 2001
 ---
 ID: NA5
 author: H.-P.Schwefel, R.Männer
-location: IB
+location: CB
 title: Parallel Problem Solving from Nature
 topic: Naturanaloge Verfahren
 type: article
@@ -6681,7 +6681,7 @@ year: 2004
 ---
 ID: NA6
 author: C.G.Langton
-location: IB
+location: CB
 title: Artificial Life II
 topic: Naturanaloge Verfahren
 type: article
@@ -6763,7 +6763,7 @@ year: 2005
 ---
 ID: NA69
 author: Marco Dorigo, Thomas Stützle
-location: IB
+location: CB
 title: Ant Colony Optimization
 topic: Naturanaloge Verfahren
 type: article
@@ -6787,7 +6787,7 @@ year: 2007
 ---
 ID: NA71
 author: Rolf P. Würtz (Hrsg.)
-location: IB
+location: CB
 title: Organic Computing
 topic: Naturanaloge Verfahren
 type: article
@@ -6795,7 +6795,7 @@ year: 2008
 ---
 ID: NA72
 author: Antonio R. Damasio
-location: IB
+location: CB
 title: Der Spinoza-Effekt - Wie Gefühle unser Leben bestimmen
 topic: Naturanaloge Verfahren
 type: article
@@ -6868,7 +6868,7 @@ year: 1992
 ID: NA80
 author: Hermann Haken
 description: A Macroscopic Approach to Complex Systems
-location: IB
+location: CB
 title: Information and Self-Organization
 topic: Naturanaloge Verfahren
 type: article
@@ -6877,7 +6877,7 @@ year: 2006
 ID: NA81
 author: Dr. Peter E. H. Hofmann et. al.
 description: Vision einer neuartigen Elektronik-Architektur für Fahrzeuge
-location: IB
+location: CB
 title: Evolutionäre E/E-Architektur
 topic: Naturanaloge Verfahren
 type: article
@@ -6885,7 +6885,7 @@ year: 2002
 ---
 ID: NA82
 author: Russell C. Eberhart
-location: IB
+location: CB
 title: Swarm Intelligence. (Morgan Kaufmann Series in Evolutionary Computation) (Gebundene
   Ausgabe)
 topic: Naturanaloge Verfahren
@@ -6934,7 +6934,7 @@ year: 2006
 ---
 ID: NA88
 author: Arthur Koestler, J. R. Smythies
-location: IB
+location: CB
 title: Beyond Reductionism - The Alpbach Symposium
 topic: Naturanaloge Verfahren
 type: article
@@ -6942,7 +6942,7 @@ year: 1972
 ---
 ID: NA9
 author: C.G.Langton
-location: IB
+location: CB
 title: Artificial Life III, Proceedings Vol.17
 topic: Naturanaloge Verfahren
 type: article
@@ -6950,7 +6950,7 @@ year: 1992
 ---
 ID: NA91
 author: Stefano Cagoni, Marco Mirolli, Marco Villani
-location: IB
+location: CB
 title: Evolution, Complexity and Artificial Life
 topic: Naturanaloge Verfahren
 type: article
@@ -7146,7 +7146,7 @@ year: 1992
 ---
 ID: PaR19
 author: Guy L., Steele jr.
-location: IB
+location: CB
 title: 'Video: What is the Sound of One Network Clapping? A Philosophical Overview
   of the Connection Machine CM-5'
 topic: Parallelrechner
@@ -7325,7 +7325,7 @@ year: 1999
 ---
 ID: PaR42
 author: M.Resnick
-location: IB
+location: CB
 title: Turtles, termites, and traffic jams. Explorations in massively parallel microworlds
 topic: Parallelrechner
 type: article
@@ -8099,7 +8099,7 @@ year: 1998
 ---
 ID: RA44-1
 author: Müller-Schloer, Schallenberger
-location: IB
+location: CB
 title: Vom Arbeitsplatzrechner zum ubiquitären Computer
 topic: Rechnerarchitekturen
 type: article
@@ -8139,7 +8139,7 @@ year: 1999
 ---
 ID: RA48
 author: Christian Wurster
-location: CB
+location: IB
 title: Computers, eine illustrierte Geschichte
 topic: Rechnerarchitekturen
 type: article
@@ -9650,7 +9650,7 @@ type: book
 ---
 ID: SYS2
 author: B. Thomé
-location: IB
+location: CB
 title: System Engineering
 topic: Systeme, Systementwurf
 type: article
@@ -9682,7 +9682,7 @@ year: 2001
 ---
 ID: SYS6
 author: J.-A.Müller
-location: IB
+location: CB
 title: 'Systems Engineering: Prinzipien und Methoden der Systementwicklung'
 topic: Systeme, Systementwurf
 type: article

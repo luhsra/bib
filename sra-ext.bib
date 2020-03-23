@@ -29719,3 +29719,37 @@ month={Feb},}
   year={2015},
   publisher={Morgan Kaufmann}
 }
+
+@article{bartsch:17:jet,
+  title = {A {{HW}}/{{SW Cross}}-{{Layer Approach}} for {{Determining Application}}-{{Redundant Hardware Faults}} in {{Embedded Systems}}},
+  author = {Bartsch, Christian and Villarraga, Carlos and Stoffel, Dominik and Kunz, Wolfgang},
+  date = {2017-02},
+  journaltitle = {Journal of Electronic Testing},
+  shortjournal = {J Electron Test},
+  volume = {33},
+  pages = {77--92},
+  issn = {0923-8174, 1573-0727},
+  doi = {10.1007/s10836-017-5643-3},
+  url = {http://link.springer.com/10.1007/s10836-017-5643-3},
+  urldate = {2020-03-05},
+  abstract = {Hardware devices of recent technology nodes are intrinsically more susceptible to faults than previous devices. This demands further improvements of error detection methods. However, any attempt to cover all errors for all theoretically possible scenarios that a system might be used in can easily lead to excessive costs. Instead, an applicationdependent approach should be taken, i.e., strategies for test and error resilience must target only those errors that can actually have an effect in the situations in which the hardware is being used. In this paper, we propose a method to inject faults into hardware (HW) and to formally analyze their effects on the software (SW) behavior. We describe how this analysis can be implemented based on a recently proposed HW-dependent software model called program netlist (PN). We show how program netlists can be extended to formally model the behavior of a program in the event of one or more hardware faults. Then, it is demonstrated how the results of the PN-based analysis can be exploited by a standard ATPG tool to determine hardware faults at the gate level that are “application-redundant”. Our experimental results show the feasibility of the proposed approach.},
+  langid = {english},
+  number = {1}
+}
+
+@article{schmidt:13:jstage,
+  title = {A {{New Formal Verification Approach}} for {{Hardware}}-Dependent {{Embedded System Software}}},
+  author = {Schmidt, Bernard and Villarraga, Carlos and Fehmel, Thomas and Bormann, Jörg and Wedler, Markus and Nguyen, Minh and Stoffel, Dominik and Kunz, Wolfgang},
+  date = {2013},
+  journaltitle = {IPSJ Transactions on System LSI Design Methodology},
+  shortjournal = {IPSJ Trans. Syst. LSI Des. Methodol.},
+  volume = {6},
+  pages = {135--145},
+  issn = {1882-6687},
+  doi = {10.2197/ipsjtsldm.6.135},
+  url = {http://jlc.jst.go.jp/DN/JST.JSTAGE/ipsjtsldm/6.135?lang=en&from=CrossRef&type=abstract},
+  urldate = {2020-03-09},
+  abstract = {This paper describes a method to generate a computational model for formal verification of hardwaredependent software in embedded systems. The computational model of the combined HW/SW system is a program netlist (PN) consisting of instruction cells connected in a directed acyclic graph that compactly represents all execution paths of the software. The model can be easily integrated into SAT-based verification environments such as those based on Bounded Model Checking (BMC). The proposed construction of the model allows for an efficient reasoning of the SAT solver over entire execution paths. Program netlists are compositional. The paper presents how they can be combined to model interrupt-driven systems. We demonstrate the efficiency of our approach by presenting experimental results from the formal verification of an industrial LIN (Local Interconnect Network) bus node, implemented as a software driver on a 32-bit RISC machine.},
+  langid = {english},
+  number = {0}
+}

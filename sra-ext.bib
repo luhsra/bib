@@ -86,6 +86,16 @@
 %       wcet            - wcet analysis
 %       survey          - survey/overview paper
 %       vv              - verification and validation
+@techreport{asanovic:16:rocketchip,
+    author = {Asanović, Krste and Avizienis, Rimas and Bachrach, Jonathan and Beamer, Scott and Biancolin, David and Celio, Christopher and Cook, Henry and Dabbelt, Daniel and Hauser, John and Izraelevitz, Adam and Karandikar, Sagar and Keller, Ben and Kim, Donggyu and Koenig, John and Lee, Yunsup and Love, Eric and Maas, Martin and Magyar, Albert and Mao, Howard and Moreto, Miquel and Ou, Albert and Patterson, David A. and Richards, Brian and Schmidt, Colin and Twigg, Stephen and Vo, Huy and Waterman, Andrew},
+    title = {The Rocket Chip Generator},
+    institution = {EECS Department, University of California, Berkeley},
+    year = {2016},
+    month = {Apr},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.html},
+    number = {UCB/EECS-2016-17},
+    category = {hw}
+}
 
 @unpublished{dijkstra:63:unpublished,
   author = {Edsger Wybe Dijkstra},
@@ -15039,6 +15049,18 @@
   address = {New York, NY, USA}
 }
 
+@article{gupta:96:tse,
+  author={D. Gupta and P. Jalote and G. Barua},
+  publisher = {IEEE Computer Society Press},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={A formal framework for on-line software version change}, 
+  year={1996},
+  volume={22},
+  number={2},
+  pages={120-131}
+}
+	
+
 @inproceedings{molesky:90:rtoss,
   author = {L. D. Molesky and K. Ramamritham and C. Shen and J. A. Stankovic and G. Zlokapa},
   title = {Implementing a Predictable Real-Time Multiprocessor Kernel -- The Spring Kernel},
@@ -16390,6 +16412,7 @@
 @inproceedings{baumann:05:usenix,
   author = {Andrew Baumann and Gernot Heiser and Jonathan Appavoo and Dilma Da
 	Silva and Orran Krieger and Robert W. Wisniewski and Jeremy Kerr},
+	year = {2005},
   title = {Providing Dynamic Update in an Operating System},
   booktitle = {Proceedings of the 2005 USENIX Annual Technical Conference },
   pages = {279--291}
@@ -29446,7 +29469,7 @@ month=feb,
 }
 
 
-@article{fitzpatrick:2004:lj,
+@article{fitzpatrick:04:lj,
   author =       {Fitzpatrick, Brad},
   title =        {Distributed Caching with Memcached},
   journal =      {Linux Journal},
@@ -29471,16 +29494,14 @@ month=feb,
   urldate =      {2019-07-21}
 }
 
-@inproceedings{hsu:17:ecsc,
+@inproceedings{hsu:17:eurosys,
   title =        {{NVthreads}: Practical Persistence for Multi-Threaded Applications},
   isbn =         {978-1-4503-4938-3},
-  url =          {http://dl.acm.org/citation.cfm?id=3064176.3064204},
   doi =          {10.1145/3064176.3064204},
-  eventtitle =   {Proceedings of the {{Twelfth European Conference}} on {{Computer Systems}}},
-  series =       {{{ECSC}}},
-  publisher =    {{ACM}},
-  urldate =      {2019-01-03},
+  booktitle =   {Proceedings of the 12th European Conference on Computer Systems (EuroSys '17)},
+  publisher =    {ACM},
   date =         {2017-04-23},
+	year =			   {2017},
   pages =        {468-482},
   author =       {Hsu, Terry Ching-Hsiang and Brügner, Helge and Roy, Indrajit and Keeton, Kimberly and Eugster, Patrick},
 }
@@ -29489,9 +29510,8 @@ month=feb,
   title =        {An {NVM} Carol: Visions of NVM Past, Present, and Future},
   doi =          {10.1109/ICDE.2018.00011},
   shorttitle =   {An NVM Carol},
-  eventtitle =   {2018 IEEE 34th International Conference on Data Engineering (ICDE)},
   booktitle =    {2018 IEEE 34th International Conference on Data Engineering (ICDE)},
-  date =         {2018-04},
+  year =         {2018},
   pages =        {15-23},
   author =       {Seltzer, M. and Marathe, V. and Byan, S.},
 }
@@ -29517,12 +29537,11 @@ month=feb,
   year =         {2014}
 }
 
-@thesis{cook:83:phd,
+@phdthesis{cook:83:phd,
   author = {Lee, Insup},
   title = {DYMOS: A Dynamic Modification System},
   school = {University of Wisconsin-Madison},
   year = 1983,
-  type = {Dissertation},
   url = {www.cis.upenn.edu/~lee/mydissertation.doc}
 }
 
@@ -29604,7 +29623,7 @@ month=feb,
   keywords = {dynamic software updating, function indirection, loop extraction, type wrapping},
 }
 
-@inproceedings{hayden::11:icde,
+@inproceedings{hayden:11:icde,
   author = {Hayden, Christopher M. and Smith, Edward K. and Hicks, Michael and Foster, Jeffrey S.},
   booktitle = {2011 IEEE 27th International Conference on Data Engineering Workshops},
   title = {State transfer for clear and efficient runtime updates},
@@ -29615,9 +29634,19 @@ month=feb,
   month = apr 
 }
 
+@article{hayden:12:tse,
+  author={C. M. {Hayden} and E. K. {Smith} and E. A. {Hardisty} and M. {Hicks} and J. S. {Foster}},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Evaluating Dynamic Software Update Safety Using Systematic Testing}, 
+  year={2012},
+  volume={38},
+  number={6},
+  pages={1340-1354},
+}
+
 @article{hayden:14:toplas,
   author = {Hayden, Christopher M. and Saur, Karla and Smith, Edward K. and Hicks, Michael and Foster, Jeffrey S.},
-  title = {Kitsune: Efficient, General-Purpose Dynamic Software Updating for C},
+  title = {Kitsune: Efficient, General-Purpose Dynamic Software Updating for {C}},
   journal = {ACM Trans. Program. Lang. Syst.},
   issue_date = {October 2014},
   volume = {36},
@@ -29628,7 +29657,6 @@ month=feb,
   pages = {13:1--13:38},
   articleno = {13},
   numpages = {38},
-  url = {http://doi.acm.org/10.1145/2629460},
   doi = {10.1145/2629460},
   acmid = {2629460},
   publisher = {ACM},
@@ -29749,4 +29777,150 @@ month=feb,
   abstract = {This paper describes a method to generate a computational model for formal verification of hardwaredependent software in embedded systems. The computational model of the combined HW/SW system is a program netlist (PN) consisting of instruction cells connected in a directed acyclic graph that compactly represents all execution paths of the software. The model can be easily integrated into SAT-based verification environments such as those based on Bounded Model Checking (BMC). The proposed construction of the model allows for an efficient reasoning of the SAT solver over entire execution paths. Program netlists are compositional. The paper presents how they can be combined to model interrupt-driven systems. We demonstrate the efficiency of our approach by presenting experimental results from the formal verification of an industrial LIN (Local Interconnect Network) bus node, implemented as a software driver on a 32-bit RISC machine.},
   langid = {english},
   number = {0}
+}
+
+@article{flenker:17:isvlsi,
+  title = {Towards {{Making Fault Injection}} on {{Abstract Models}} a {{More Accurate Tool}} for {{Predicting RT}}-{{Level Effects}}},
+  author = {Flenker, Tino and Malburg, Jan and Fey, Goerschwin and Avramenko, Serhiy and Violante, Massimo and Reorda, Matteo Sonza},
+  date = {2017},
+  journaltitle ={2017 IEEE Computer Society Annual Symposium on VLSI},
+  publisher = {{IEEE Computer Society}},
+  doi = {10.1109/ISVLSI.2017.99},
+  url = {https://core.ac.uk/display/86592049},
+  urldate = {2020-03-26},
+}
+
+@article{lelli:12:jss,
+  title =        {An experimental comparison of different real-time schedulers on multicore systems},
+  author =       {Lelli, Juri and Faggioli, Dario and Cucinotta, Tommaso and Lipari, Giuseppe},
+  journal =      {Journal of Systems and Software},
+  volume =       {85},
+  number =       {10},
+  pages =        {2405--2416},
+  year =         {2012},
+  publisher =    {Elsevier}
+}
+
+@manual{infineon:14:aurix-um1,
+  title = {TC29x B-step - User's Manual, V1.3 2014-12},
+  organization = {Infineon Technologies AG},
+  address = {St.-Martin-Str. 53, 81669 M{\"u}nchen, Germany},
+  year = 2014,
+  month = dec,
+}
+
+@manual{arm:17:gic,
+  title = {ARM Generic Interrupt Controller Architecture Specification -- GIC 3.0/4.0},
+  organization = {ARM Limited},
+  address = {110 Fulbourn Road, Cambridge, England CB1 9NJ.},
+  year = 2017,
+}
+
+@manual{waterman:19:riscv-priviledged,
+  title = {The RISC-V Instruction Set Manual -- Volume II: Privileged Architecture,  Document
+Version  20190608-Priv-MSU-Ratified”},
+  editor = {Andrew Waterman and Krste Asanovic},
+  institution = {{RISC-V} Foundation},
+  year = 2019,
+  month = jun,
+}
+
+@manual{waterman:19:riscv-unpriviledged,
+  editor = {Waterman, Andrew and Asanović, Krste},
+  title = {The RISC-V Instruction Set Manual, Volume I: Unpriviledged ISA -- Document Version 20191213},
+  institution = {RISC-V Foundation},
+  year = 2019,
+  month = dec,
+}
+
+
+@manual{nxp:12:mpc5676,
+  title =        {MPC5676R Microcontroller Reference Manual. Rev 5},
+  organization = {NXP},
+  year =         2012,
+  month =        sep
+}
+
+@manual{intel:96:ioapic,
+  title =        {Intel ® 82093AA I/O Advanced Programmable Interrupt Controller (I/O APIC)},
+  organization = {Intel},
+  year =         1996,
+  month =        may
+}
+
+@article{gomes:15:esl,
+  title={Task-aware interrupt controller: Priority space unification in real-time systems},
+  author={Gomes, Tiago and Garcia, Paulo and Salgado, Filipe and Monteiro, Jo{\~a}o and Ekpanyapong, Mongkol and Tavares, Adriano},
+  journal={IEEE Embedded Systems Letters},
+  volume={7},
+  number={1},
+  pages={27--30},
+  year={2015},
+  publisher={IEEE}
+}
+
+@inproceedings{mauroner:17:dsd,
+  author =       {F. {Mauroner} and M. {Baunach}},
+  booktitle =    {2017 Euromicro Conference on Digital System Design (DSD)},
+  title =        {EventIRQ: An Event Based and Priority Aware IRQ Handling for Multi-tasking Environments},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {102-110},
+} 
+
+
+@inproceedings{patel:17:rtas,
+  author =       {P. {Patel} and M. {Vanga} and B. B. {Brandenburg}},
+  booktitle =    {2017 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)},
+  title =        {TimerShield: Protecting High-Priority Tasks from Low-Priority Timer Interference (Outstanding Paper)},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {3-12},
+} 
+
+@inproceedings{strnadel:13:arcs,
+  title={Load-adaptive monitor-driven hardware for preventing embedded real-time systems from overloads caused by excessive interrupt rates},
+  author={Strnadel, Josef},
+  booktitle={International Conference on Architecture of Computing Systems},
+  pages={98--109},
+  year={2013},
+  organization={Springer}
+}
+
+@inproceedings{stoyle:05:sigplan,
+  author = {Stoyle, Gareth and Hicks, Michael and Bierman, Gavin and Sewell, Peter and Neamtiu, Iulian},
+  year = {2005},
+  month = {01},
+  pages = {183-194},
+  title = {Mutatis Mutandis: Safe and predictable dynamic software updating},
+  volume = {40},
+  booktitle = {ACM SIGPLAN Notices},
+  doi = {10.1145/1255450.1255455}
+}
+
+@inproceedings{elhajj:16:asplos,
+author = {El Hajj, Izzat and Merritt, Alexander and Zellweger, Gerd and Milojicic, Dejan and Achermann, Reto and Faraboschi, Paolo and Hwu, Wen-mei and Roscoe, Timothy and Schwan, Karsten},
+title = {SpaceJMP: Programming with Multiple Virtual Address Spaces},
+year = {2016},
+isbn = {9781450340915},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2872362.2872366},
+doi = {10.1145/2872362.2872366},
+booktitle = {Proceedings of the Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {353–368},
+numpages = {16},
+keywords = {memory-centric computing, NVM, virtual memory, address spaces, DRAM},
+location = {Atlanta, Georgia, USA},
+series = {ASPLOS ’16}
+}
+
+@inproceedings{duan:19:ndss,
+  title={Automating Patching of Vulnerable Open-Source Software Versions in Application Binaries},
+  author={Ruian Duan and Ashish Bijlani and Yang Ji and Omar Alrawi and Yiyuan Xiong and Moses Ike and Brendan Saltaformaggio and Wenke Lee},
+  booktitle={2019 Network and Distributed System Security Symposium (NDSS 2019)},
+  year={2019},
+  location = {San Diego, CA, USA}
 }

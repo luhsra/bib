@@ -30426,7 +30426,6 @@ year = {1999, Originally published in 1971}
   volume =       {48},
   number =       {1},
   issn =         {0360-0300},
-  url =          {https://doi.org/10.1145/2791120},
   doi =          {10.1145/2791120},
   journal =      {ACM Computing Surveys},
   month =        jul,
@@ -30520,11 +30519,26 @@ year = {1999, Originally published in 1971}
 
   
 @article{kuo:19:arxiv,
-  title =        {MultiK: A Framework for Orchestrating Multiple Specialized Kernels},
+  title =        {{MultiK: A} Framework for Orchestrating Multiple Specialized Kernels},
   author =       {Kuo, Hsuan-Chi and Gunasekaran, Akshith and Jang, Yeongjin and Mohan, Sibin and Bobba, Rakesh B and Lie, David and Walker, Jesse},
   journal =      {arXiv preprint arXiv:1903.06889},
   year =         {2019}
 }
+
+@inproceedings{gu:14:dsn,
+	author = {Gu, Zhongshu and Saltaformaggio, Brendan and Zhang, Xiangyu and Xu, Dongyan}, 
+	title = {{FACE-CHANGE}: {A}pplication-Driven Dynamic Kernel View Switching in a Virtual Machine}, 
+	year = {2014}, 
+	isbn = {9781479922338}, 
+	publisher = {IEEE Computer Society}, 
+	address = {USA}, 
+	doi = {10.1109/DSN.2014.52}, 
+	abstract = {Kernel minimization has already been established as a practical approach to reducing the trusted computing base. Existing solutions have largely focused on whole-system profiling - generating a globally minimum kernel image that is being shared by all applications. However, since different applications use only part of the kernel's code base, the minimized kernel still includes an unnecessarily large attack surface. Furthermore, once the static minimized kernel is generated, it is not flexible enough to adapt to an altered execution environment (e.g., new workload). FACE-CHANGE is a virtualization-based system to facilitate dynamic switching at runtime among multiple minimized kernels, each customized for an individual application. Based on precedent profiling results, FACE-CHANGE transparently presents a customized kernel view for each application to confine its reach ability of kernel code. In the event that the application exceeds this boundary, FACE-CHANGE is able to recover the missing code and back trace its attack/exception provenance to analyze the anomalous behavior.}, 
+	booktitle = {Proceedings of the 2014 44th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN '14)}, 
+	pages = {491–502}, 
+	numpages = {12}, 
+}
+
 
 @inproceedings{rashid:87:asplos,
   title =        {Machine-independent virtual memory management for paged uniprocessor and multiprocessor architectures},

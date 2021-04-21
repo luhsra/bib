@@ -17623,6 +17623,14 @@
   isbn = {978-3-319-08695-8}
 }
 
+@book{duvall:07:ci,
+  author = {Paul M. Duvall and Steve Matyas and Andrew Glover},
+  title = {Continuous Integration: Improving Software Quality and Reducing Risk},
+  year = 2007,
+  publisher = {Addison-Wesley},
+  isbn = {0321336380}
+}
+
 @book{autran:15:book,
   title = {Soft Errors: From Particles to Circuits (Devices, Circuits, and Systems)},
   author = {Jean-Luc Autran and Daniela Munteanu},
@@ -30700,3 +30708,29 @@ year = {1999, Originally published in 1971}
 	keywords = {Regression Testing, Regression Test Selection, Test Case Prioritization, Continuous Integration},
 	location = {Hong Kong, China},
 }
+
+@inproceedings{memon:17:icse-seip,
+	author = {Memon, Atif and Gao, Zebao and Nguyen, Bao and Dhanda, Sanjeev and Nickell, Eric and Siemborski, Rob and Micco, John},
+	title = {Taming Google-Scale Continuous Testing},
+	year = {2017},
+	isbn = {9781538627174},
+	publisher = {IEEE Press},
+	doi = {10.1109/ICSE-SEIP.2017.16},
+	abstract = {Growth in Google's code size and feature churn rate has seen increased reliance on continuous integration (CI) and testing to maintain quality. Even with enormous resources dedicated to testing, we are unable to regression test each code change individually, resulting in increased lag time between code check-ins and test result feedback to developers. We report results of a project that aims to reduce this time by: (1) controlling test workload without compromising quality, and (2) distilling test results data to inform developers, while they write code, of the impact of their latest changes on quality. We model, empirically understand, and leverage the correlations that exist between our code, test cases, developers, programming languages, and code-change and test-execution frequencies, to improve our CI and development processes. Our findings show: very few of our tests ever fail, but those that do are generally "closer" to the code they test; certain frequently modified code and certain users/tools cause more breakages; and code recently modified by multiple developers (more than 3) breaks more often.},
+	booktitle = {Proceedings of the 39th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP '17)},
+	pages = {233–242},
+	numpages = {10},
+	keywords = {continuous integration, software testing, selection},
+	location = {Buenos Aires, Argentina},
+}	
+
+@inproceedings{rothermel:99:icsm,
+	author = {Rothermel, Gregg and Untch, Roland H. and Chu, Chengyun and Harrold, Mary Jean},
+	title = {Test Case Prioritization: An Empirical Study},
+	year = {1999},
+	isbn = {0769500161},
+	publisher = {IEEE Computer Society},
+	address = {USA},
+	abstract = {Test case prioritization techniques schedule test cases for execution in an order that attempts to maximize some objective function. A variety of objective functions are applicable; one such function involves rate of fault detection --- a measure of how quickly faults are detected within the testing process. An improved rate of fault detection during regression testing can provide faster feedback on a system under regression test and let debuggers begin their work earlier than might otherwise be possible. In this paper, we describe several techniques for prioritizing test cases and report our empirical results measuring the effectiveness of these techniques for improving rate of fault detection. The results provide insights into the tradeoffs among various techniques for test case prioritization.},
+	booktitle = {Proceedings of the IEEE International Conference on Software Maintenance (ICSM '99)},
+}	

@@ -25459,6 +25459,19 @@ COTS-based small satellites},
   doi = {10.1145/361011.361073},
   category = {os,mm-pro-hw}
 }
+@inproceedings{daley:65:afips,
+	author = {Daley, R. C. and Neumann, P. G.},
+	title = {A General-Purpose File System for Secondary Storage}, 
+	year = {1965}, 
+	isbn = {9781450378857}, 
+	publisher = {Association for Computing Machinery}, 
+	doi = {10.1145/1463891.1463915}, abstract = {The need for a versatile on-line secondary storage complex in a multiprogramming environment is immense. During on-line interaction, user-owned off-line detachable storage media such as cards and tape become highly undesirable. On the other hand, if all users are to be able to retain as much information as they wish in machine-accessible secondary storage, various needs become crucial: Little-used information must percolate to devices with longer access times, to allow ample space on faster devices for more frequently used files. Furthermore, information must be easy to access when required, it must be safe from accidents and maliciousness, and it should be accessible to other users on an easily controllable basis when desired. Finally, any consideration which is not basic to a user's ability to manipulate this information should be invisible to him unless he specifies otherwise.}, 
+	booktitle = {Proceedings of the November 30--December 1, 1965, Fall Joint Computer Conference, Part I (AFIPS '65)}, 
+	pages = {213–229}, 
+	numpages = {17}, 
+	location = {Las Vegas, Nevada} 
+}
+ 
 
 @article{saltzer:74:cacm,
   author = {Saltzer, Jerome H.},
@@ -30532,7 +30545,7 @@ year = {1999, Originally published in 1971}
 @inproceedings{chamith:17:pldi,
  author = {Chamith, Buddhika and Svensson, Bo Joel and Dalessandro, Luke and Newton, Ryan R.},
  title = {Instruction Punning: Lightweight Instrumentation for x86-64},
- booktitle = {Proceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ booktitle = {Proceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI '17)},
  series = {PLDI 2017},
  year = {2017},
  isbn = {978-1-4503-4988-8},
@@ -30547,6 +30560,22 @@ year = {1999, Originally published in 1971}
  keywords = {application profiling, dynamic instrumentation},
 }
 
+@inproceedings{rashid:87:asplos, 
+	author = {Rashid, Richard and Tevanian, Avadis and Young, Michael and Golub, David and Baron, Robert and Black, David and Bolosky, William and Chew, Jonathan}, 
+	title = {Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures}, 
+	year = {1987}, 
+	isbn = {0818608056}, 
+	publisher = {IEEE Computer Society Press}, 
+	address = {Washington, DC, USA}, 
+	url = {https://doi.org/10.1145/36206.36181}, 
+	doi = {10.1145/36206.36181}, 
+	booktitle = {Proceedings of the Second International Conference on Architectual Support for Programming Languages and Operating Systems (ASPLOS '87)}, 
+	series = {ASPLOS '87},
+	pages = {31–39}, 
+	numpages = {9}, 
+	location = {Palo Alto, California, USA}, 
+}
+	
 
 @inproceedings{zhang:18:raid,
   author =       {Zhang, Zhi and Cheng, Yueqiang and Nepal, Surya and Liu, Dongxi and Shen, Qingni and Rabhi, Fethi},
@@ -30610,20 +30639,11 @@ year = {1999, Originally published in 1971}
 	publisher = {IEEE Computer Society}, 
 	address = {USA}, 
 	doi = {10.1109/DSN.2014.52}, 
-	abstract = {Kernel minimization has already been established as a practical approach to reducing the trusted computing base. Existing solutions have largely focused on whole-system profiling - generating a globally minimum kernel image that is being shared by all applications. However, since different applications use only part of the kernel's code base, the minimized kernel still includes an unnecessarily large attack surface. Furthermore, once the static minimized kernel is generated, it is not flexible enough to adapt to an altered execution environment (e.g., new workload). FACE-CHANGE is a virtualization-based system to facilitate dynamic switching at runtime among multiple minimized kernels, each customized for an individual application. Based on precedent profiling results, FACE-CHANGE transparently presents a customized kernel view for each application to confine its reach ability of kernel code. In the event that the application exceeds this boundary, FACE-CHANGE is able to recover the missing code and back trace its attack/exception provenance to analyze the anomalous behavior.}, 
 	booktitle = {Proceedings of the 2014 44th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN '14)}, 
 	pages = {491–502}, 
 	numpages = {12}, 
 }
 
-
-@inproceedings{rashid:87:asplos,
-  title =        {Machine-independent virtual memory management for paged uniprocessor and multiprocessor architectures},
-  author =       {Rashid, Richard and Tevanian, Avadis and Young, Michael and Golub, David and Baron, Robert and Black, David and Bolosky, William and Chew, Jonathan},
-  booktitle =    {Proceedings of the second international conference on Architectual support for programming languages and operating systems},
-  pages =        {31--39},
-  year =         {1987}
-}
 
 @article{rashid:88:toc,
   title={Machine-independent virtual memory management for paged uniprocessor and multiprocessor architectures},
@@ -30673,6 +30693,13 @@ year = {1999, Originally published in 1971}
   year={1982},
   date= jan # "~5th",
   note={US Patent 4,309,569}
+}
+
+@patent{tan:96:iommu,
+  title={I/O cache with dual tag arrays},
+  author={Juay K Tan and Robert W Kwong},
+  year={1996},
+  note={US Patent 5,551,000}
 }
 
 @inproceedings{leung:89:sm,

@@ -4020,6 +4020,41 @@
 	series = {CCS '07}
 }
 
+@article{roemer:12:tiss,
+	author     = {Roemer, Ryan and Buchanan, Erik and Shacham, Hovav and Savage, Stefan},
+	title      = {Return-Oriented Programming: Systems, Languages, and Applications},
+	year       = {2012},
+	issue_date = {March 2012},
+	publisher  = {Association for Computing Machinery},
+	address    = {New York, NY, USA},
+	volume     = {15},
+	number     = {1},
+	issn       = {1094-9224},
+	doi        = {10.1145/2133375.2133377},
+	abstract   = {We introduce return-oriented programming, a technique by which an attacker can induce arbitrary behavior in a program whose control flow he has diverted, without injecting any code. A return-oriented program chains together short instruction sequences already present in a program’s address space, each of which ends in a “return” instruction.Return-oriented programming defeats the W⊕X protections recently deployed by Microsoft, Intel, and AMD; in this context, it can be seen as a generalization of traditional return-into-libc attacks. But the threat is more general. Return-oriented programming is readily exploitable on multiple architectures and systems. It also bypasses an entire category of security measures---those that seek to prevent malicious computation by preventing the execution of malicious code.To demonstrate the wide applicability of return-oriented programming, we construct a Turing-complete set of building blocks called gadgets using the standard C libraries of two very different architectures: Linux/x86 and Solaris/SPARC. To demonstrate the power of return-oriented programming, we present a high-level, general-purpose language for describing return-oriented exploits and a compiler that translates it to gadgets.},
+	journal    = {ACM Trans. Inf. Syst. Secur.},
+	month      = {mar},
+	articleno  = {2},
+	numpages   = {34},
+	keywords   = {Return-oriented programming, control flow integrity, W-xor-X, x86, SPARC, NX, memory safety, RISC, return-into-libc, attacks}
+}
+
+@inproceedings{bletsch:11:asiaccs,
+	author    = {Bletsch, Tyler and Jiang, Xuxian and Freeh, Vince W. and Liang, Zhenkai},
+	title     = {Jump-Oriented Programming: A New Class of Code-Reuse Attack},
+	year      = {2011},
+	isbn      = {9781450305648},
+	publisher = {Association for Computing Machinery},
+	address   = {New York, NY, USA},
+	doi       = {10.1145/1966913.1966919},
+	abstract  = {Return-oriented programming is an effective code-reuse attack in which short code sequences ending in a ret instruction are found within existing binaries and executed in arbitrary order by taking control of the stack. This allows for Turing-complete behavior in the target program without the need for injecting attack code, thus significantly negating current code injection defense efforts (e.g., W⊕X). On the other hand, its inherent characteristics, such as the reliance on the stack and the consecutive execution of return-oriented gadgets, have prompted a variety of defenses to detect or prevent it from happening.In this paper, we introduce a new class of code-reuse attack, called jump-oriented programming. This new attack eliminates the reliance on the stack and ret instructions (including ret-like instructions such as pop+jmp) seen in return-oriented programming without sacrificing expressive power. This attack still builds and chains functional gadgets, each performing certain primitive operations, except these gadgets end in an indirect branch rather than ret. Without the convenience of using ret to unify them, the attack relies on a dispatcher gadget to dispatch and execute the functional gadgets. We have successfully identified the availability of these jump-oriented gadgets in the GNU libc library. Our experience with an example shellcode attack demonstrates the practicality and effectiveness of this technique.},
+	booktitle = {Proceedings of the 6th ACM Symposium on Information, Computer and Communications Security (ASIACCS '11)},
+	pages     = {30–40},
+	numpages  = {11},
+	location  = {Hong Kong, China},
+	series    = {ASIACCS '11}
+}
+
 @inproceedings{tran:11:raiid,
 	author="Tran, Minh and Etheridge, Mark and Bletsch, Tyler and Jiang, Xuxian and Freeh, Vincent and Ning, Peng",
 	title="On the Expressiveness of Return-into-libc Attacks",

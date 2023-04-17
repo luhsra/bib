@@ -1,0 +1,59 @@
+#!/usr/bin/python3
+
+from pathlib import Path
+import bibtexparser
+import time
+import hashlib
+import pickle
+
+def try_load_bibtex_pickle(filename, filename_pickle):
+    sha1sum = hashlib.sha1()
+    with open(filename, "rb") as fd:
+        sha1sum.update(fd.read())
+    new_sha1sum = sha1sum.digest()
+    data = None
+
+    try:
+        with open(filename_pickle, 'rb') as fd:
+            old_sha1sum, data = pickle.load(fd)
+        if old_sha1sum != new_sha1sum:
+            data = None
+    except Exception as e:
+        pass
+    return new_sha1sum, data
+
+
+def load_bibtex(filename, modify_data=None):
+    """Loads a bibtex file, and exposes it as a dict, to be included by
+       !bibtex.
+    """
+    parser_start = time.time()
+    fd = open(filename)
+    filename_pickle = str(filename) + ".pickle"
+    sha1sum, data = try_load_bibtex_pickle(filename, filename_pickle)
+    if data is None:
+        parser = bibtexparser.bparser.BibTexParser(common_strings=True)
+        parser.ignore_nonstandard_types = False
+        data = bibtexparser.load(fd, parser)
+        with open(filename_pickle, "wb+") as pickle_fd:
+            pickle.dump((sha1sum, data), pickle_fd)
+    parser_end = time.time()
+    pickle.dumps(data)
+    return {e['ID']: e for e in data.entries}
+
+
+if __name__ == "__main__":
+    import sys
+    _dir = Path(__file__).parent
+    existing     = load_bibtex(_dir / 'sra-ext.bib')
+    new_entries  = load_bibtex(sys.argv[1])
+
+    for key in list(new_entries):
+        if key in existing:
+            del new_entries[key]
+    # Generate pretty printed bibtex entry for inclusion into pages.
+    db = bibtexparser.bibdatabase.BibDatabase()
+    db.entries = new_entries.values()
+    print(bibtexparser.dumps(db).strip())
+
+    

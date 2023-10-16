@@ -3500,6 +3500,40 @@
   note = {\url{https://en.cppreference.com/w/cpp/language/constexpr}}
 }
 
+@manual{intel:22:manual,
+  title={Intel® 64 and {IA-32} Architectures Software Developer’s Manual, Combined Volumes: 1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D and 4},
+  url={https://cdrdv2.intel.com/v1/dl/getContent/671200},
+  publisher={Intel Corporation},
+  year={2022},
+  month={Apr}
+}
+
+@misc{garrison:20:intel-newsroom,
+  title={Intel {CET} Answers Call to Protect Against Common Malware Threats},
+  note={\url{https://www.intel.com/content/www/us/en/newsroom/opinion/intel-cet-answers-call-protect-common-malware-threats.html}},
+  journal={Intel Newsroom},
+  author={Garrison, Tom},
+  year={2020},
+  language={en-US}
+}
+
+@misc{corbet:22:lwn,
+  title={Shadow stacks for user space},
+  url={https://lwn.net/Articles/885220/},
+  note={\url{https://lwn.net/Articles/885220/}},
+  journal={LWN.net},
+  author={Corbet, Jonathan},
+  year={2022},
+  month={Feb}
+}
+
+@manual{arm:22:manual,
+  title={Arm\textsuperscript{\textregistered} Architecture Reference Manual for A-Profile Architecture},
+  author={{Arm Limited}},
+  address={Cambridge, England},
+  note={DDI 0487H.a},
+  year=2022
+}
 @manual{atmel:15:atmega328pb-spic,
   title = {{ATmega328PB} 8-bit {AVR} Microcontroller with 32K Bytes In-System Programmable Flash},
   organization = {Atmel Corporation},
@@ -3789,6 +3823,63 @@
 @manual{gnat:java,
   author = {AdaCore},
   title = {GNAT User's Guide Supplement for the JVM Platform}
+}
+
+@inproceedings{dang:15:asiaccs,
+  address={Singapore Republic of Singapore},
+  title={The Performance Cost of Shadow Stacks and Stack Canaries},
+  ISBN={978-1-4503-3245-3},
+  DOI={10.1145/2714576.2714635},
+  abstractNote={Control ﬂow defenses against ROP either use strict, expensive, but strong protection against redirected RET instructions with shadow stacks, or much faster but weaker protections without. In this work we study the inherent overheads of shadow stack schemes. We ﬁnd that the overhead is roughly 10% for a traditional shadow stack. We then design a new scheme, the parallel shadow stack, and show that its performance cost is signiﬁcantly less: 3.5%. Our measurements suggest it will not be easy to improve performance on current x86 processors further, due to inherent costs associated with RET and memory load/store instructions. We conclude with a discussion of the design decisions in our shadow stack instrumentation, and possible lighter-weight alternatives.},
+  booktitle={Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security (ASIACCS '15)},
+  publisher={ACM},
+  author={Dang, Thurston H.Y. and Maniatis, Petros and Wagner, David},
+  year={2015},
+  month={Apr},
+  pages={555–566},
+  language={en}
+}
+
+@inproceedings{zou:22:taco,
+  title={Practical Software-Based Shadow Stacks on x86-64},
+  volume={19},
+  ISSN={1544-3566, 1544-3973},
+  DOI={10.1145/3556977},
+  number={4},
+  journal={ACM Transactions on Architecture and Code Optimization (TACO '22)},
+  author={Zou, Changwei and Gao, Yaoqing and Xue, Jingling},
+  year={2022},
+  month={Dec},
+  pages={1–26},
+  language={en}
+}
+
+@inproceedings{zou:22:totsem,
+  title={Buddy Stacks: Protecting Return Addresses with Efficient Thread-Local Storage and Runtime Re-Randomization},
+  volume={31},
+  ISSN={1049-331X, 1557-7392},
+  DOI={10.1145/3494516},
+  number={2},
+  journal={ACM Transactions on Software Engineering and Methodology (TOSEM '22)},
+  author={Zou, Changwei and Wang, Xudong and Gao, Yaoqing and Xue, Jingling},
+  year={2022},
+  month={Apr},
+  pages={1–37},
+  language={en}
+}
+
+@inproceedings{burow:19:ieeesp,
+  address={San Francisco, CA, USA},
+  title={{SoK}: Shining Light on Shadow Stacks},
+  ISBN={978-1-5386-6660-9},
+  DOI={10.1109/SP.2019.00076},
+  booktitle={2019 IEEE Symposium on Security and Privacy (SP)},
+  publisher={IEEE},
+  author={Burow, Nathan and Zhang, Xinping and Payer, Mathias},
+  year={2019},
+  month={May},
+  pages={985–999},
+  language={en}
 }
 
 @inproceedings{feng:19:isorc,

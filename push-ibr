@@ -1,0 +1,94 @@
+#!/usr/bin/python3
+
+from pathlib import Path
+import bibtexparser
+import time
+import hashlib
+import pickle
+import gitlab
+import os
+
+# Configuration
+GITLAB_URL = 'https://gitlab.ibr.cs.tu-bs.de'
+PRIVATE_TOKEN = os.environ.get('IBR_GITLAB_TOKEN') or os.environ.get('GITLAB_TOKEN')
+PROJECT_ID = '5214'
+FILE_PATH = 'vss.bib'
+BRANCH_NAME = 'main'
+
+def load_bibtex(filename):
+    parser = bibtexparser.bparser.BibTexParser(common_strings=True)
+    parser.ignore_nonstandard_types = False
+    with open(filename) as fd:
+        data = bibtexparser.load(fd, parser)
+    return data
+
+IBRAUTHORS = {
+    ('Christian', 'Dietrich'): 'dietrich',
+    ('Niklas', 'Gollenstede'): 'gollenst',
+}
+
+def transform(data):
+    for e in data.entries:
+        keys = e.keys()
+        for k1,k2 in [('x-slides', 'ibrslides'), ('x-pdf', 'url')]:
+            if k1 in e and k2 not in e:
+                e[k2] = e[k1]
+                del[k1]
+        for k in keys & set('usera userb userc userd'.split()):
+            del e[k]
+        for k in {x for x in keys if x.startswith('x-')}:
+            del e[k]
+        authors = [x.strip() for x in e['author'].split("and")]
+        ibrauthors = []
+        for author in authors:
+            for ((fn, sn), ibr) in IBRAUTHORS.items():
+                if author in (f'{fn} {sn}', f'{sn}, {fn}'):
+                   ibrauthors.append(ibr)
+        e['ibrauthors'] = " ".join(ibrauthors)
+        e['ibrgroups'] = "vss"
+    return data
+
+
+# Initialize a GitLab instance
+gl = gitlab.Gitlab(GITLAB_URL, private_token=PRIVATE_TOKEN)
+
+# Get the project
+project = gl.projects.get(PROJECT_ID)
+
+def file_content_changed(file_path, branch, new_content):
+    try:
+        # Get current file content from the repository
+        f = project.files.get(file_path=file_path, ref=branch)
+    except gitlab.exceptions.GitlabGetError:
+        # If the file does not exist, we consider the content changed
+        return True
+    # Decode the current content
+    current_content = f.decode()
+    # Compare the current content with the new content
+    return current_content != new_content
+
+def update_file(file_path, branch, new_content):
+    data = {
+        'branch': branch,
+        'content': new_content,
+        'commit_message': 'Update vss.bib from git@github.com:luhsra/bib.git ',
+    }
+    try:
+        file = project.files.get(file_path=file_path, ref=branch)
+        file.content = new_content
+        file.save(branch=branch, commit_message='Update file content via API')
+        print("File updated successfully.")
+    except gitlab.exceptions.GitlabUpdateError as e:
+        print(f"Failed to update file: {e}")
+
+if __name__ == "__main__":
+    import sys
+    _dir = Path(__file__).parent
+    data = load_bibtex(_dir / 'vss-own.bib')
+    data = transform(data)
+    bibtex = bibtexparser.dumps(data)
+
+    if file_content_changed(FILE_PATH, BRANCH_NAME, bibtex):
+        update_file(FILE_PATH, BRANCH_NAME, bibtex)
+    else:
+        print("No update needed. The file content is the same.")

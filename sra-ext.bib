@@ -1418,15 +1418,6 @@
   doi={10.1147/rd.246.0660}
 }
 
-@phdthesis{hoffmann:16:phd,
-  author = {Martin Hoffmann},
-  keywords = {dOSEK;Soft Errors; Transiente Hardwarefehler; Redundanz; Sicherheitskritische Systeme; Eingebettete Systeme; Embedded Systems},
-  school = {Friedrich-Alexander University Erlangen-Nuremberg},
-  location = {Erlangen},
-  title = {{A Dependability-Oriented Static Embedded Kernel}},
-  year = {2016}
-}
-
 @phdthesis{stilkerich:16:phd,
   author = {Isabella Stilkerich},
   keywords = {memory management, embedded system, escape analysis, Java Virtual Machine, AUTOSAR, OSEK, KESO},
@@ -1461,7 +1452,9 @@
   title = {Operating System Support for Redundant Multithreading},
   year = {2014},
   school = {TU Dresden},
-  type = {Dissertation}
+  type = {Dissertation},
+  url={https://tud.qucosa.de/api/qucosa%3A28444/attachment/ATT-1/?L=1},
+  urldate={2024-03-28},
 }
 
 @phdthesis{ulbrich:14:phd,
@@ -1515,7 +1508,9 @@
   school = {Technische Universit{\"a}t Dresden, Fakult{\"a}t Informatik},
   year = {2011},
   owner = {ulbrich},
-  timestamp = {2013.07.24}
+  timestamp = {2013.07.24},
+  url={https://tud.qucosa.de/api/qucosa%3A25596/attachment/ATT-0/?L=1},
+  urldate={2024-03-28}
 }
 
 @phdthesis{scheler:11:phd,
@@ -4474,7 +4469,7 @@
   month = may,
   year = 2014,
   category = {ESS, DanceOS},
-  download-url = {http://www.danceos.org/publications/ETS-2014-Schirmeier.pdf}
+  doi={10.1109/ETS.2014.6847803}
 }
 
 @inproceedings{hoenig:14:trios,
@@ -4540,6 +4535,7 @@
   booktitle = {Proceedings of the 19th IEEE European Test Symposium (ETS '14)},
   month = may,
   year = 2014,
+  pages={1--6},
   doi = {10.1109/ETS.2014.6847793}
 }
 
@@ -4596,7 +4592,9 @@
   month = jan,
   year = 2013,
   category = {ESS, DanceOS},
-  download-url = {http://danceos.org/publications/HiPEAC-DFR-2013-Doebel.pdf}
+  download-url = {https://ess.cs.uos.de/danceos/publications/HiPEAC-DFR-2013-Doebel.pdf},
+  url = {https://ess.cs.uos.de/danceos/publications/HiPEAC-DFR-2013-Doebel.pdf},
+  urldate={2024-03-28},
 }
 
 @inproceedings{cho:13:dac,
@@ -4937,7 +4935,9 @@
   publisher = {USENIX Association},
   address = {Berkeley, CA, USA},
   userd = {HotDep '12},
-  ar = {42\%}
+  ar = {42\%},
+  url = {https://www.usenix.org/conference/hotdep12/workshop-program/presentation/D{\"o}bel},
+  urldate={2024-03-28}
 }
 
 @inproceedings{park:12:ftscs,
@@ -10482,7 +10482,9 @@
   year = {2004},
   publisher = {IEEE Computer Society Press},
   address = {Washington, DC, USA},
-  category = {cc}
+  category = {cc},
+  pages={75--86},
+  doi={10.1109/CGO.2004.1281665}
 }
 
 @inproceedings{stoerzer:04:eiwas,
@@ -11501,15 +11503,16 @@
   address = {Darlinghurst, Australia, Australia}
 }
 
-@inproceedings{mukherjee:03:micro,
-  author = {Mukherjee, Shubhendu S. and Weaver, Christopher and Emer, Joel and Reinhardt, Steven K. and Austin, Todd},
-  title = {A Systematic Methodology to Compute the Architectural Vulnerability Factors for a High-Performance Microprocessor},
-  booktitle = {MICRO 36: Proceedings of the 36th annual IEEE/ACM International Symposium on Microarchitecture},
-  year = {2003},
-  isbn = {0-7695-2043-X},
-  pages = {29},
-  publisher = {IEEE Computer Society Press},
-  address = {Washington, DC, USA}
+@INPROCEEDINGS{mukherjee:03:micro,
+  author={Mukherjee, S.S. and Weaver, C.T. and Emer, J. and Reinhardt, S.K. and Austin, T.},
+  booktitle={Proceedings. 36th Annual IEEE/ACM International Symposium on Microarchitecture, 2003. MICRO-36.},
+  title={A systematic methodology to compute the architectural vulnerability factors for a high-performance microprocessor},
+  year={2003},
+  volume={},
+  number={},
+  pages={29-40},
+  keywords={Microprocessors;Circuit faults;Error analysis;Costs;Computer aided instruction;Fault diagnosis;Prefetching;Instruments;Computational modeling;Circuit simulation},
+  doi={10.1109/MICRO.2003.1253181}
 }
 
 @inproceedings{germaschewski:03:ols,
@@ -15612,7 +15615,8 @@
   month = oct,
   keywords = {Application software;Circuit faults;Circuit testing;Computer errors;Costs;Error correction;Hardware;Power supplies;Registers;System testing},
   doi = {10.1109/TEST.1991.519504},
-  issn = {1089--3539}
+  issn = {1089--3539},
+  pages={140--},
 }
 
 @article{glew:90:sigarch,
@@ -17776,11 +17780,44 @@ numpages     = {8}
 }
 
 @inproceedings{hari:12:asplos,
-  author = {Siva Kumar Sastry Hari and Sarita V. Adve and Helia Naeimi and Pradeep Ramachandran},
-  title = {Relyzer: Exploiting Application-Level Fault Equivalence to Analyze Application Resiliency to Transient Faults},
-  crossref = {asplos:12},
-  doi = {10.1145/2150976.2150990}
+author = {Siva Kumar Sastry Hari and Sarita V. Adve and Helia Naeimi and Pradeep Ramachandran},
+title = {Relyzer: Exploiting Application-Level Fault Equivalence to Analyze Application Resiliency to Transient Faults},
+crossref = {asplos:12},
+doi = {10.1145/2150976.2150990},
+year = {2012},
+issue_date = {April 2012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {47},
+number = {4},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/2248487.2150990},
+doi = {10.1145/2248487.2150990},
+journal = {SIGPLAN Not.},
+month = {mar},
+pages = {123--134},
+numpages = {12},
+keywords = {architecture, hardware reliability evaluation, low-cost hardware resiliency, silent data corruption, transient faults}
 }
+
+@inproceedings{10.1145/2150976.2150990,
+author = {Hari, Siva Kumar Sastry and Adve, Sarita V. and Naeimi, Helia and Ramachandran, Pradeep},
+title = {Relyzer: exploiting application-level fault equivalence to analyze application resiliency to transient faults},
+year = {2012},
+isbn = {9781450307598},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2150976.2150990},
+doi = {10.1145/2150976.2150990},
+abstract = {Future microprocessors need low-cost solutions for reliable operation in the presence of failure-prone devices. A promising approach is to detect hardware faults by deploying low-cost monitors of software-level symptoms of such faults. Recently, researchers have shown these mechanisms work well, but there remains a non-negligible risk that several faults may escape the symptom detectors and result in silent data corruptions (SDCs). Most prior evaluations of symptom-based detectors perform fault injection campaigns on application benchmarks, where each run simulates the impact of a fault injected at a hardware site at a certain point in the application's execution (application fault site). Since the total number of application fault sites is very large (trillions for standard benchmark suites), it is not feasible to study all possible faults. Previous work therefore typically studies a randomly selected sample of faults. Such studies do not provide any feedback on the portions of the application where faults were not injected. Some of those instructions may be vulnerable to SDCs, and identifying them could allow protecting them through other means if needed.This paper presents Relyzer, an approach that systematically analyzes all application fault sites and carefully picks a small subset to perform selective fault injections for transient faults. Relyzer employs novel fault pruning techniques that prune faults that need detailed study by either predicting their outcomes or showing them equivalent to other faults. We find that Relyzer prunes about 99.78\% of the total faults across twelve applications studied here, reducing the faults that require detailed simulation by 3 to 5 orders of magnitude for most of the applications. Fault injection simulations on the remaining faults can identify SDC causing faults in the entire application. Some of Relyzer's techniques rely on heuristics to determine fault equivalence. Our validation efforts show that Relyzer determines fault outcomes with 96\% accuracy, averaged across all the applications studied here.},
+booktitle = {Proceedings of the Seventeenth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {123–134},
+numpages = {12},
+keywords = {architecture, hardware reliability evaluation, low-cost hardware resiliency, silent data corruption, transient faults},
+location = {London, England, UK},
+series = {ASPLOS XVII}
+}
+
 
 @inproceedings{song:13:rtss,
   author = {Jiguo Song and Wittrock, J. and Parmer, G.},
@@ -19476,7 +19513,8 @@ numpages     = {8}
   title = {Digital circuit testing and testability},
   author = {Lala, Parag K},
   year = {1997},
-  publisher = {Academic press}
+  publisher = {Academic Press Inc},
+  isbn={978-0124343306},
 }
 
 @book{lieberherr:96,
@@ -19679,7 +19717,7 @@ numpages     = {8}
   author = {Echtle, Klaus},
   title = {Fehlertoleranzverfahren},
   year = {1990},
-  isbn = {ISBN 978-0-3875-2680-5},
+  isbn = {978-0-3875-2680-5},
   publisher = {Informatik Springer},
   address = {Berlin, Germany}
 }
@@ -24000,7 +24038,9 @@ COTS-based small satellites},
   number = {29es},
   pages = {7},
   year = {1996},
-  publisher = {Belltown Media}
+  publisher={Belltown Media Houston, TX},
+  url={https://dl.acm.org/doi/fullHtml/10.5555/326350.326357},
+  urldate={2024-03-28},
 }
 
 @article{vo:96:spe,
@@ -26298,14 +26338,20 @@ series = {ACM '77}
 }
 
 @article{parnas:72:cacm,
-  author = {David Lorge Parnas},
-  title = {On the Criteria to be used in Decomposing Systems into Modules},
-  journal = {Communications of the ACM},
-  year = 1972,
-  month = dec,
-  pages = {1053--1058},
-  nc = 95,
-  category = {se,aop}
+author = {David Lorge Parnas},
+title = {On the Criteria to be used in Decomposing Systems into Modules},
+journal = {Communications of the ACM},
+year = 1972,
+month = dec,
+pages = {1053--1058},
+nc = 95,
+category = {se,aop},
+publisher = {Association for Computing Machinery},
+volume = {15},
+number = {12},
+address = {New York, NY, USA},
+issn = {0001-0782},
+doi = {10.1145/361598.361623},
 }
 
 @article{bensoussan:72:cacm,
@@ -26766,11 +26812,12 @@ series = {ACM '77}
 @article{hamming:50:bell,
   title = {Error detecting and error correcting codes},
   author = {Hamming, Richard W},
-  journal = {Bell System technical journal},
+  journal={The Bell System Technical Journal},
   volume = {29},
   number = {2},
   pages = {147--160},
-  year = {1950}
+  year = {1950},
+  doi={10.1002/j.1538-7305.1950.tb00463.x},
 }
 
 @article{shannon:49:pire,
@@ -30049,16 +30096,18 @@ series = {ACM '77}
   number={3},
   pages={159--169},
   year={2015},
-  publisher={De Gruyter Oldenbourg}
+  publisher={De Gruyter Oldenbourg},
+  doi={10.1515/itit-2014-1080},
 }
 
 @inproceedings{xu:12:dsn,
   title={Understanding soft error propagation using efficient vulnerability-driven fault injection},
   author={Xu, Xin and Li, Man-Lap},
-  booktitle={Dependable Systems and Networks (DSN), 2012 42nd Annual IEEE/IFIP International Conference on},
+  booktitle={IEEE/IFIP International Conference on Dependable Systems and Networks (DSN 2012)}, 
   pages={1--12},
   year={2012},
-  organization={IEEE}
+  organization={IEEE},
+  doi={10.1109/DSN.2012.6263923}
 }
 
 @article{vallero:15:micpro,
@@ -30776,6 +30825,7 @@ month=feb,
 	doi={10.1109/ReCoSoC.2014.6861351},
   publisher = {IEEE Computer Society Press},
   address = {Washington, DC, USA},
+  pages={1--6},
 }
 
 @inproceedings{kooli:16:vts,
@@ -30799,6 +30849,7 @@ month=feb,
 	doi={10.1109/DDECS.2016.7482446},
   publisher = {IEEE Computer Society Press},
   address = {Washington, DC, USA},
+  pages={1--6},
 }
 
 @inproceedings{essos:17:gruss,
@@ -30859,7 +30910,7 @@ month=feb,
   publisher = {{IEEE Computer Society}},
   doi = {10.1109/ISVLSI.2017.99},
   url = {https://core.ac.uk/display/86592049},
-  urldate = {2020-03-26},
+  urldate = {2024-03-28},
 }
 
 @article{lelli:12:jss,
@@ -30903,6 +30954,8 @@ Version  20190608-Priv-MSU-Ratified”},
   institution = {RISC-V Foundation},
   year = 2019,
   month = dec,
+  url={https://drive.google.com/file/d/1s0lZxUZaa7eV_O0_WsZzaurFLLww7ou5/view?usp=drive_link},
+  urldate={2024-03-28}
 }
 
 
@@ -33591,7 +33644,8 @@ year = {1999, Originally published in 1971}
   number =       {6},
   pages =        {190--200},
   year =         {2005},
-  publisher =    {ACM New York, NY, USA}
+  publisher =    {ACM New York, NY, USA},
+  doi={10.1145/1064978.1065034},
 }
 
 @inproceedings{carbin:11:lncs,
@@ -33608,7 +33662,7 @@ year = {1999, Originally published in 1971}
   pages     = {609--633},
   publisher = {Springer},
   year      = {2011},
-  doi       = {10.1007/978-3-642-22655-7\_28},
+  doi       = {10.1007/978-3-642-22655-7_28},
   timestamp = {Tue, 14 May 2019 10:00:54 +0200},
   biburl    = {https://dblp.org/rec/conf/ecoop/CarbinMKR11.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
@@ -35043,7 +35097,7 @@ series = {HUST'17}
 
 @inproceedings{parrotta:00:ioltw,
   title={New techniques for accelerating fault injection in VHDL descriptions},
-  author={Parrotta, B and Rebaudengo, Maurizio and Reorda, Matteo Sonza and Violante, Massimo},
+  author={Parrotta, B. and Rebaudengo, M. and Reorda, M.S. and Violante, M.},
   booktitle={Proceedings 6th IEEE International On-Line Testing Workshop (Cat. No. PR00646)},
   pages={61--66},
   year={2000},
@@ -35086,7 +35140,7 @@ series = {HUST'17}
   address = {Los angeles, USA},
   numpages={21},
   url={https://eprints.ncl.ac.uk/fulltext.aspx?url=55707%2f35D90208-2D34-4C19-BFB5-65E037791AE6.pdf&pub_id=160699&ts=637649754792360989},
-  urldate = {2021-08-19}
+  urldate = {2024-03-28}
 }
 
 @INPROCEEDINGS{karlsson:94:pdcs,
@@ -35094,7 +35148,8 @@ series = {HUST'17}
     title = {Comparison and Integration of Three Diverse Physical Fault Injection Techniques},
     booktitle = {In PDCS 2: Open Conference},
     year = {1994},
-    pages = {615--642}
+    pages = {615--642},
+    doi={10.1007/978-3-642-79789-7_18},
 }
 
 @INPROCEEDINGS{schiffel:10:edcc,
@@ -35109,10 +35164,12 @@ series = {HUST'17}
 }
 
 @inproceedings{thomas:13:selse,
-  title={LLFI: An intermediate code level fault injector for soft computing applications},
+  title={LLFI : An Intermediate Code Level Fault Injector For Soft Computing Applications},
   author={Thomas, Anna and Pattabiraman, Karthik},
   booktitle={Workshop on Silicon Errors in Logic System Effects (SELSE)},
-  year={2013}
+  year={2013},
+  url={https://api.semanticscholar.org/CorpusID:202726208},
+  urldate={2024-03-28}
 }
 
 @ARTICLE{kao:93:tse,
@@ -35171,11 +35228,16 @@ series = {HUST'17}
 }
 
 @inproceedings{marinescu:10:usenix,
-  title={An extensible technique for high-precision testing of recovery code},
-  author={Marinescu, Paul and Banabic, Radu and Candea, George},
-  booktitle={Proceedings of the USENIX annual technical conference},
-  number={CONF},
-  year={2010}
+author = {Marinescu, Paul D. and Banabic, Radu and Candea, George},
+title = {An extensible technique for high-precision testing of recovery code},
+year = {2010},
+publisher = {USENIX Association},
+address = {USA},
+booktitle = {Proceedings of the 2010 USENIX Conference on USENIX Annual Technical Conference},
+pages = {23},
+numpages = {1},
+location = {Boston, MA},
+series = {USENIXATC'10}
 }
 
 @phdthesis{schirmeier:16:phdthesis,
@@ -35187,8 +35249,21 @@ series = {HUST'17}
   type = {Dissertation},
   doi = {10.17877/DE290R-17222},
   download-url = {https://eldorado.tu-dortmund.de/bitstream/2003/35175/1/Dissertation.pdf},
+  url = {https://eldorado.tu-dortmund.de/bitstream/2003/35175/1/Dissertation.pdf},
   category = {ESS, DanceOS},
-  urldate={2022-06-01}
+  urldate={2024-03-29}
+}
+
+@phdthesis{hoffmann:16:phd,
+  author = {Martin Hoffmann},
+  title = {Konstruktive Zuverlässigkeit - Eine Methodik für zuverlässige Systemsoftware auf unzuverlässiger Hardware},
+  month = apr,
+  year = 2016,
+  school = {Friedrich-Alexander-Universi{\"a}t Erlangen-N{\"u}rnberg},
+  type = {Dissertation},
+  download-url = {https://opus4.kobv.de/opus4-fau/files/7038/DisserationMartinHoffmann.pdf},
+  url = {https://opus4.kobv.de/opus4-fau/files/7038/DisserationMartinHoffmann.pdf},
+  urldate={2024-03-28}
 }
 
 @phdthesis{hoffmann:16:phdthesis,
@@ -35199,7 +35274,8 @@ series = {HUST'17}
   school = {Friedrich-Alexander-Universi{\"a}t Erlangen-N{\"u}rnberg},
   type = {Dissertation},
   download-url = {https://opus4.kobv.de/opus4-fau/files/7038/DisserationMartinHoffmann.pdf},
-  urldate={2022-06-01}
+  url = {https://opus4.kobv.de/opus4-fau/files/7038/DisserationMartinHoffmann.pdf},
+  urldate={2024-03-28}
 }
 
 @article{strachey:65:journal,
@@ -35256,7 +35332,7 @@ series = {HUST'17}
     doi = {10.1145/2678373.2665685},
     journal = {SIGARCH Comput. Archit. News},
     month = jun,
-    pages = {61–72},
+    pages = {61--72},
     numpages = {12}
 }
 
@@ -35275,7 +35351,8 @@ series = {HUST'17}
   booktitle={2011 Design, Automation \& Test in Europe},
   pages={1--6},
   year={2011},
-  organization={IEEE}
+  organization={IEEE},
+  doi={10.1109/DATE.2011.5763257}
 }
 
 @article{dell:97:ibm,
@@ -35284,16 +35361,66 @@ series = {HUST'17}
   journal={IBM Microelectronics division},
   volume={11},
   pages={1--23},
-  year={1997}
+  year={1997},
+  url={https://api.semanticscholar.org/CorpusID:17379018},
+  urldate={2024-03-28},
 }
 
 @inproceedings{yoon:10:asplos,
-  title={Virtualized and flexible ECC for main memory},
-  author={Yoon, Doe Hyun and Erez, Mattan},
-  booktitle={Proceedings of the fifteenth International Conference on Architectural support for programming languages and operating systems},
-  pages={397--408},
-  year={2010}
+    title={Virtualized and flexible ECC for main memory},
+    author={Yoon, Doe Hyun and Erez, Mattan},
+    booktitle = {Proceedings of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages={397--408},
+    year={2010},
+    doi = {10.1145/1736020.1736064},
+    isbn = {9781605588391},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    location = {Pittsburgh, Pennsylvania, USA},
+    series = {ASPLOS XV}
 }
+
+@article{10.1145/1735971.1736064,
+author = {Yoon, Doe Hyun and Erez, Mattan},
+title = {Virtualized and flexible ECC for main memory},
+year = {2010},
+issue_date = {March 2010},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {45},
+number = {3},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/1735971.1736064},
+doi = {10.1145/1735971.1736064},
+abstract = {We present a general scheme for virtualizing main memory error-correction mechanisms, which map redundant information needed to correct errors into the memory namespace itself. We rely on this basic idea, which increases flexibility to increase error protection capabilities, improve power efficiency, and reduce system cost; with only small performance overheads. We augment the virtual memory system architecture to detach the physical mapping of data from the physical mapping of its associated ECC information. We then use this mechanism to develop two-tiered error protection techniques that separate the process of detecting errors from the rare need to also correct errors, and thus save energy. We describe how to provide strong chipkill and double-chip kill protection using existing DRAM and packaging technology. We show how to maintain access granularity and redundancy overheads, even when using \texttimes{}8 DRAM chips. We also evaluate error correction for systems that do not use ECC DIMMs. Overall, analysis of demanding SPEC CPU 2006 and PARSEC benchmarks indicates that performance overhead is only 1\% with ECC DIMMs and less than 10\% using standard Non-ECC DIMM configurations, that DRAM power savings can be as high as 27\%, and that the system energy-delay product is improved by 12\% on average.},
+journal = {SIGPLAN Not.},
+month = {mar},
+pages = {397–408},
+numpages = {12},
+keywords = {reliability, memory systems, fault tolerance, error correction}
+}
+
+@article{10.1145/1735970.1736064,
+author = {Yoon, Doe Hyun and Erez, Mattan},
+title = {Virtualized and flexible ECC for main memory},
+year = {2010},
+issue_date = {March 2010},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {38},
+number = {1},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/1735970.1736064},
+doi = {10.1145/1735970.1736064},
+abstract = {We present a general scheme for virtualizing main memory error-correction mechanisms, which map redundant information needed to correct errors into the memory namespace itself. We rely on this basic idea, which increases flexibility to increase error protection capabilities, improve power efficiency, and reduce system cost; with only small performance overheads. We augment the virtual memory system architecture to detach the physical mapping of data from the physical mapping of its associated ECC information. We then use this mechanism to develop two-tiered error protection techniques that separate the process of detecting errors from the rare need to also correct errors, and thus save energy. We describe how to provide strong chipkill and double-chip kill protection using existing DRAM and packaging technology. We show how to maintain access granularity and redundancy overheads, even when using \texttimes{}8 DRAM chips. We also evaluate error correction for systems that do not use ECC DIMMs. Overall, analysis of demanding SPEC CPU 2006 and PARSEC benchmarks indicates that performance overhead is only 1\% with ECC DIMMs and less than 10\% using standard Non-ECC DIMM configurations, that DRAM power savings can be as high as 27\%, and that the system energy-delay product is improved by 12\% on average.},
+journal = {SIGARCH Comput. Archit. News},
+month = {mar},
+pages = {397–408},
+numpages = {12},
+keywords = {reliability, memory systems, fault tolerance, error correction}
+}
+
+
 
 @article{hwang:12:notices,
   title={Cosmic rays don't strike twice: understanding the nature of DRAM errors and the implications for system design},
@@ -35312,7 +35439,8 @@ series = {HUST'17}
   booktitle={SC'12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
   pages={1--11},
   year={2012},
-  organization={IEEE}
+  organization={IEEE},
+  doi={10.1109/SC.2012.13}
 }
 
 @inproceedings{reis:05:isca,
@@ -35341,12 +35469,14 @@ series = {HUST'17}
   journal={Xcell J},
   volume={50},
   pages={8--11},
-  year={2004}
+  year={2004},
+  url={https://www.xilinx.com/publications/archives/xcell/Xcell50.pdf},
+  urldate={2024-03-28},
 }
 
 @inproceedings{tullsen:95:isca,
   title={Simultaneous multithreading: Maximizing on-chip parallelism},
-  author={Tullsen, Dean M and Eggers, Susan J and Levy, Henry M},
+  author={Tullsen, Dean M. and Eggers, Susan J. and Levy, Henry M.},
   booktitle={Proceedings of the 22nd annual international symposium on Computer architecture (ISCA'95)},
   pages={392--403},
   year={1995},
@@ -35441,7 +35571,7 @@ series = {HUST'17}
     url = {https://doi.org/10.1145/1007352.1007375},
     doi = {10.1145/1007352.1007375},
     booktitle = {Proceedings of the Thirty-Sixth Annual ACM Symposium on Theory of Computing},
-    pages = {101–110},
+    pages = {101--110},
     numpages = {10},
     keywords = {combinatorial algorithms, searching, sorting, memory faults, memory models},
     location = {Chicago, IL, USA},
@@ -35460,6 +35590,7 @@ series = {HUST'17}
     publisher="Springer Berlin Heidelberg",
     address="Berlin, Heidelberg",
     pages="1--8",
+    doi={10.1007/11561071_1},
 }
 
 @InProceedings{ferraro:06:esa,
@@ -35563,13 +35694,14 @@ keywords = {Combinatorial algorithms, Sorting, Searching, Memory faults, Memory 
 }
 
 @inproceedings{mahmood:84:dasc,
-author = {A. MAHMOOD and D. ANDREWS and E. MCCLUSKEY},
+author = {A. Mahmood and D. Andrews and E. McCluskey},
 title = {Executable assertions and flight software},
 booktitle = {Digital Avionics Systems Conference (DASC '84)},
 pages={346--351},
 year={1984},
 doi = {10.2514/6.1984-2726},
 URL = {https://arc.aiaa.org/doi/abs/10.2514/6.1984-2726},
+urldate={2024-03-28},
 eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
 }
 
@@ -35592,7 +35724,7 @@ eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
   year={1999},
   volume={2},
   number={},
-  pages={105-112 vol.2},
+  pages={105--112},
   doi={10.1109/EURMIC.1999.794768}
 }
 
@@ -35640,13 +35772,16 @@ eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
   doi={10.23919/ECC.2009.7074598}
 }
 
-@article{leeke:11:depend,
-  title={An automated wrapper-based approach to the design of dependable software},
-  author={Leeke, Matthew and Jhumka, Arshad},
-  booktitle={Proceedings of the 4th International Conference of Dependability (DEPEND '11)},
-  volume={4},
-  publisher={IARIA},
-  year={2011}
+@inproceedings{leeke:11:depend,
+       booktitle = {4th International Conference on Dependability (DEPEND'11)},
+           month = {August},
+           title = {An automated wrapper-based approach to the design of dependable software},
+          author = {Matthew Leeke and Arshad Jhumka},
+            year = {2011},
+       publisher = {IARIA},
+        keywords = {pcav hpsg fault tolerance reliability},
+             url = {https://wrap.warwick.ac.uk/45677/},
+             urldate={2024-03-28},
 }
 
 @INPROCEEDINGS{benso:00:dsn,
@@ -35682,7 +35817,7 @@ eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
   doi={10.1109/APSEC.2008.46}
 }
 
-@INPROCEEDINGS{shirvani:98:tech,
+@techreport{shirvani:98:tech,
     author = {Philip P. Shirvani and Edward J. McCluskey},
     title = {Fault-Tolerant Systems in a Space Environment: The CRC ARGOS project},
     booktitle = {Technical Report},
@@ -35690,8 +35825,8 @@ eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
     number={2},
     year = {1998},
     month={December},
-    address={Stanford University, CA, USA},
-    publisher = {Center for Reliable Computing}
+    publisher = {Stanford University},
+    address = {Stanford, CA, USA},
 }
 
 @inproceedings{shirvani:00:dsn,
@@ -35701,7 +35836,7 @@ eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1984-2726}
   pages={B56-B57},
   publisher={IEEE Computer Society Press},
   month={June},
-  year={2000}
+  year={2000},
 }
 
 @INPROCEEDINGS{lovellette:02:aero,
@@ -35885,7 +36020,7 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/2380356.2380375},
 doi = {10.1145/2380356.2380375},
-pages = {83–92},
+pages = {83--92},
 numpages = {10},
 keywords = {microkernel, redundant multithreading},
 location = {Tampere, Finland},
@@ -35893,15 +36028,21 @@ series = {EMSOFT '12}
 }
 
 @misc{doebel:14:racing,
-      title={Resource-Aware Replication on Heterogeneous Multicores: Challenges and Opportunities},
-      author={Björn Döbel and Robert Muschner and Hermann Härtig},
-      booktitle={Workshop on Resource Awareness and Adaptivity in Multi-Core Computing (RACING '14)},
-      year={2014},
-      month={May},
-      eprint={1405.2913},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC}
+    title={Resource-Aware Replication on Heterogeneous Multicores: Challenges and Opportunities},
+    author={Björn Döbel and Robert Muschner and Hermann Härtig},
+    booktitle={Workshop on Resource Awareness and Adaptivity in Multi-Core Computing (RACING '14)},
+    year={2014},
+    month={May},
+    eprint={1405.2913},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC},
+    journal={CoRR},
+    url={http://arxiv.org/abs/1405.2913},
+    urldate={2024-03-28},
+    volume={abs/1405.2913},
+    doi={https://doi.org/10.48550/arXiv.1405.2913},
 }
+
 
 @INPROCEEDINGS{ohlsson:95:ftcs,
   author={Ohlsson, J. and Rimen, M.},
@@ -36031,6 +36172,7 @@ series = {ACP4IS '08}
 }
 
 @Inbook{cheng:02:book,
+author={Yuhua Cheng and Chenming Hu},
 title="Threshold Voltage Model",
 bookTitle="Mosfet Modeling {\&} BSIM3 User's Guide",
 year="2002",
@@ -36055,7 +36197,8 @@ url="https://doi.org/10.1007/0-306-47050-0_3"
   title={Memory Systems: Cache, DRAM, disk},
   author={Jacob, Bruce and Wang, David and Ng, Spencer},
   year={2010},
-  publisher={Morgan Kaufmann Publishers Inc.}
+  publisher={Morgan Kaufmann Publishers Inc.},
+  isbn={978-0-12-379751-3},
 }
 
 @article{wilkins:02:hotwire21,
@@ -36065,8 +36208,8 @@ url="https://doi.org/10.1007/0-306-47050-0_3"
   volume={21},
   month={NOV},
   year={2002},
-  url={https://www.weibull.com/hotwire/issue21/hottopics21.htm},
-  urldate={2022-06-01}
+  url={https://www.maths.tcd.ie/~donmoore/project/project/Write%20up/22%20mar%202006/hottopics21.htm},
+  urldate={2024-03-28}
 }
 
 @article{wilkins:02:hotwire22,
@@ -36076,8 +36219,8 @@ url="https://doi.org/10.1007/0-306-47050-0_3"
   volume={22},
   month={DEC},
   year={2002},
-  url={https://www.weibull.com/hotwire/issue22/hottopics22.htm},
-  urldate={2022-06-01}
+  url={https://www.maths.tcd.ie/~donmoore/project/project/Write%20up/22%20mar%202006/hottopics22.htm},
+  urldate={2024-03-28}
 }
 
 @ARTICLE{schaller:97:ieee,
@@ -36108,6 +36251,15 @@ url="https://doi.org/10.1007/0-306-47050-0_3"
   year={2021},
   url={https://irds.ieee.org/},
   urldate={2022-06-02}
+}
+
+@misc{irds:22:roadmap,
+  author={International Roadmap Committee},
+  title={International Roadmap for Devices and Systems 2022 Update (Executive Summary)},
+  publisher = {IEEE Press},
+  year={2022},
+  url={https://irds.ieee.org/},
+  urldate={2024-03-28}
 }
 
 @Inbook{hoefflinger:12:itrs,
@@ -36147,6 +36299,7 @@ pages = {440-459},
 year = {2014},
 doi = {10.1504/IJCAET.2014.065419},
 URL = {https://www.inderscienceonline.com/doi/abs/10.1504/IJCAET.2014.065419},
+urldate={2024-03-28},
 eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419},
 }
 
@@ -36258,7 +36411,7 @@ eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419}
     year={2013},
     month={sep},
     url={https://www.altera.com/en_US/pdfs/literature/wp/wp-01206-introduction-single-event-upsets.pdf},
-    urldate={2022-06-17},
+    urldate={2024-03-28},
     note={WP-01206-1.0}
 }
 
@@ -36272,6 +36425,7 @@ eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419}
     year = {1979},
     doi = {10.1126/science.206.4420.776},
     URL = {https://www.science.org/doi/abs/10.1126/science.206.4420.776},
+    urldate={2024-03-28},
     eprint = {https://www.science.org/doi/pdf/10.1126/science.206.4420.776},
 }
 
@@ -36300,6 +36454,7 @@ eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419}
     booktitle = {Proceedings of the 14th International Conference on Embedded Software},
     articleno = {19},
     numpages = {10},
+    pages={1--10},
     location = {New Delhi, India},
     series = {EMSOFT '14}
 }
@@ -36314,7 +36469,7 @@ eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419}
     url = {https://doi.org/10.1145/800195.805940},
     doi = {10.1145/800195.805940},
     booktitle = {Proceedings of the 1969 24th National Conference},
-    pages = {295–309},
+    pages = {295--309},
     numpages = {15},
     series = {ACM '69}
 }
@@ -36326,7 +36481,8 @@ eprint = {https://www.inderscienceonline.com/doi/pdf/10.1504/IJCAET.2014.065419}
   year={2003},
   volume={23},
   number={6},
-  pages={70-75},
+  pages={70--75},
+  keywords={Circuit faults;Costs;Error analysis;Protection;Latches;Error correction;Computer errors;Cosmic rays;Random access memory;Semiconductor device measurement},
   doi={10.1109/MM.2003.1261389}
 }
 
@@ -36337,6 +36493,8 @@ Version  20211203”},
   institution = {{RISC-V} International},
   year = 2021,
   month = dec,
+  url={https://drive.google.com/file/d/1EMip5dZlnypTk7pt4WWUKmtjUKTOkBqh/view?usp=drive_link},
+  urldate={2024-03-28}
 }
 
 @article{lowe:20:arxiv,
@@ -36504,7 +36662,8 @@ isbn="978-3-540-44789-4"
   title={Probability \& statistics with reliability, queuing and computer science applications},
   author={Trivedi, Kishor S},
   year={2008},
-  publisher={John Wiley \& Sons}
+  publisher={John Wiley \& Sons},
+  isbn={9780471333418}
 }
 
 @ARTICLE{normand:96:nuclear,
@@ -36532,7 +36691,7 @@ isbn="978-3-540-44789-4"
   author={Intel Corporation},
   year={2022},
   url={https://www.intel.com/content/www/us/en/develop/download/intel-64-and-ia-32-architectures-software-developers-manual-volume-1-basic-architecture.html},
-  urldate={2022-12-07},
+  urldate={2024-03-29},
 }
 
 @book{hyde:10:book,
@@ -36655,3 +36814,302 @@ url = {https://www.usenix.org/conference/nsdi19/presentation/kaffes},
 publisher = {USENIX Association},
 month = feb
 }
+
+@book{cormen:09:book,
+  author = {Cormen, Thomas H. and Leiserson, Charles E. and Rivest, Ronald L. and Stein, Clifford},
+  title = {Introduction to Algorithms},
+  edition = {3rd},
+  publisher = {MIT Press},
+  year = {2009},
+  isbn = {978-0-262-03384-8}
+}
+
+@book{lehmann:06:book,
+  author = {Lehmann, Erich L. and Romano, Joseph P.},
+  title = {Testing Statistical Hypotheses},
+  edition = {4th},
+  publisher = {Springer},
+  year = {2022},
+  doi = {10.1007/978-3-030-70578-7},
+  isbn = {978-3-030-70578-7}
+}
+
+@article{goedel:31:journal,
+    title = {Über formal unentscheidbare {Sätze} der {Principia} {Mathematica} und verwandter {Systeme} {I}},
+    volume = {38},
+    issn = {1436-5081},
+    url = {https://doi.org/10.1007/BF01700692},
+    doi = {10.1007/BF01700692},
+    number = {1},
+    journal = {Monatshefte für Mathematik und Physik},
+    author = {Gödel, Kurt},
+    month = dec,
+    year = {1931},
+    pages = {173--198},
+}
+
+@article{turing:36:journal,
+    title = "On Computable Numbers, with an Application to the Entscheidungsproblem",
+    journal = "Proceedings of the London Mathematical Society",
+    author = "Turing, A. M.",
+    issn = "0024-6115, 1460-244X",
+    volume = "s2-42",
+    number = "1",
+    pages = "230-265",
+    publisher = "Oxford University Press",
+    doi = "10.1112/plms/s2-42.1.230",
+    series = "Proceedings of the London Mathematical Society",
+    year = "1937",
+}
+
+@article{church:36:journal,
+  title={An unsolvable problem of elementary number theory},
+  author={Alonzo Church},
+  journal={American J. of Math.},
+  volume={58},
+  pages={345--363},
+  year={1936},
+  publisher={The Johns Hopkins University Press},
+  url={https://phil415.pbworks.com/f/Church.pdf},
+  urldate={2024-03-28},
+}
+
+@book{bishop:06:book,
+  author = {Bishop, Christopher M.},
+  title = {Pattern Recognition and Machine Learning},
+  edition = {1st},
+  publisher = {Springer},
+  year = {2006},
+  isbn={978-0-387-31073-2},
+  issn={1613-9011}
+}
+
+@inproceedings{edwards:14:sigcse,
+author = {Edwards, Stephen H. and Shams, Zalia and Estep, Craig},
+title = {Adaptively Identifying Non-Terminating Code When Testing Student Programs},
+year = {2014},
+isbn = {9781450326056},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2538862.2538926},
+doi = {10.1145/2538862.2538926},
+booktitle = {Proceedings of the 45th ACM Technical Symposium on Computer Science Education},
+pages = {15--20},
+numpages = {6},
+keywords = {software testing, infinite loop, junit, programming assignments, automated grading, timeout, automated assessment},
+location = {Atlanta, Georgia, USA},
+series = {SIGCSE '14}
+}
+
+@ARTICLE{gandhi:07:tits,
+  author={Gandhi, Tarak and Trivedi, Mohan Manubhai},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  title={Pedestrian Protection Systems: Issues, Survey, and Challenges},
+  year={2007},
+  volume={8},
+  number={3},
+  pages={413-430},
+  doi={10.1109/TITS.2007.903444}
+}
+
+@inproceedings{chatzidimitriou:19:dsn,
+	title = {Demystifying Soft Error Assessment Strategies on {ARM} {CPUs}: Microarchitectural Fault Injection vs. Neutron Beam Experiments},
+	isbn = {978-1-72810-057-9},
+	url = {https://ieeexplore.ieee.org/document/8809532/},
+	doi = {10.1109/DSN.2019.00018},
+	shorttitle = {Demystifying Soft Error Assessment Strategies on {ARM} {CPUs}},
+	eventtitle = {2019 49th Annual {IEEE}/{IFIP} International Conference on Dependable Systems and Networks ({DSN})},
+	pages = {26--38},
+	booktitle = {2019 49th Annual {IEEE}/{IFIP} International Conference on Dependable Systems and Networks ({DSN})},
+	publisher = {{IEEE}},
+	author = {Chatzidimitriou, Athanasios and Bodmann, Pablo and Papadimitriou, George and Gizopoulos, Dimitris and Rech, Paolo},
+	date = {2019-06},
+}
+
+@INPROCEEDINGS{palazzi:19:issre,
+  author={Palazzi, Lucas and Li, Guanpeng and Fang, Bo and Pattabiraman, Karthik},
+  booktitle={2019 IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)},
+  title={A Tale of Two Injectors: End-to-End Comparison of IR-Level and Assembly-Level Fault Injection},
+  year={2019},
+  volume={},
+  number={},
+  pages={151-162},
+  doi={10.1109/ISSRE.2019.00024}
+}
+
+@INPROCEEDINGS{kuvaiskii:14:srds,
+  author={Kuvaiskii, Dmitrii and Fetzer, Christof},
+  booktitle={2014 IEEE 33rd International Symposium on Reliable Distributed Systems},
+  title={Practical Encoded Processing},
+  year={2014},
+  volume={},
+  number={},
+  pages={335-336},
+  doi={10.1109/SRDS.2014.62}
+}
+
+@article{weicker:84:cacm,
+  title={Dhrystone: a synthetic systems programming benchmark},
+  author={Weicker, Reinhold P},
+  journal={Communications of the ACM},
+  volume={27},
+  number={10},
+  pages={1013--1030},
+  year={1984},
+  publisher={ACM New York, NY, USA},
+  doi={10.1145/358274.358283}
+}
+
+@inproceedings{bienia:08:pact,
+author = {Bienia, Christian and Kumar, Sanjeev and Singh, Jaswinder Pal and Li, Kai},
+title = {The PARSEC Benchmark Suite: Characterization and Architectural Implications},
+year = {2008},
+isbn = {9781605582825},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1454115.1454128},
+doi = {10.1145/1454115.1454128},
+booktitle = {Proceedings of the 17th International Conference on Parallel Architectures and Compilation Techniques},
+pages = {72--81},
+numpages = {10},
+keywords = {shared-memory computers, performance measurement, multithreading, benchmark suite},
+location = {Toronto, Ontario, Canada},
+series = {PACT '08}
+}
+
+@inproceedings{bienia:09:pmbs,
+  title={Parsec 2.0: A new benchmark suite for chip-multiprocessors},
+  author={Bienia, Christian and Li, Kai},
+  booktitle={Proceedings of the 5th Annual Workshop on Modeling, Benchmarking and Simulation},
+  volume={2011},
+  pages={37},
+  year={2009},
+  url={http://www-mount.ece.umn.edu/~jjyi/MoBS/2009/program/02E-Bienia.pdf},
+  urldate={2024-03-28}
+}
+
+@ARTICLE{narayanan:06:journal,
+  author={Narayanan, V. and Xie, Y.},
+  journal={Computer},
+  title={Reliability concerns in embedded system designs},
+  year={2006},
+  volume={39},
+  number={1},
+  pages={118-120},
+  doi={10.1109/MC.2006.31}
+}
+
+@article{reghenzani:23:acmcs,
+author = {Reghenzani, Federico and Guo, Zhishan and Fornaciari, William},
+title = {Software Fault Tolerance in Real-Time Systems: Identifying the Future Research Questions},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {14s},
+issn = {0360-0300},
+doi = {10.1145/3589950},
+journal = {ACM Comput. Surv.},
+month = {jul},
+articleno = {306},
+numpages = {30},
+pages={1--30},
+keywords = {mixed-criticality, Real-time, fault-tolerance}
+}
+
+@INPROCEEDINGS{dicarlo:14:dft,
+  author={Di Carlo, Stefano and Prinetto, Paolo and Rolfo, Daniele and Trotta, Pascal},
+  booktitle={2014 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFT)},
+  title={A fault injection methodology and infrastructure for fast single event upsets emulation on Xilinx SRAM-based FPGAs},
+  year={2014},
+  volume={},
+  number={},
+  pages={159-164},
+  doi={10.1109/DFT.2014.6962073}
+}
+
+@book{avizienis:12:book,
+  title={The Evolution of Fault-Tolerant Computing},
+  author={Avizienis, Algirdas and Kopetz, Hermann and Laprie, Jean-Claude},
+  volume={1},
+  year={2012},
+  publisher={Springer Science \& Business Media},
+  isbn={978-3-7091-8871-2}
+}
+
+@inproceedings{baleani:03:cases,
+author = {Baleani, M. and Ferrari, A. and Mangeruca, L. and Sangiovanni-Vincentelli, A. and Peri, Maurizio and Pezzini, Saverio},
+title = {Fault-tolerant platforms for automotive safety-critical applications},
+year = {2003},
+isbn = {1581136765},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/951710.951734},
+doi = {10.1145/951710.951734},
+booktitle = {Proceedings of the 2003 International Conference on Compilers, Architecture and Synthesis for Embedded Systems},
+pages = {170–177},
+numpages = {8},
+keywords = {VLSI, automotive, fault-tolerant, multi-processor, safety critical, system-on-a-chip},
+location = {San Jose, California, USA},
+series = {CASES '03}
+}
+
+@article{swaminathan:17:patrog,
+title = {A new distance measure for non-identical data with application to image classification},
+journal = {Pattern Recognition},
+volume = {63},
+pages = {384-396},
+year = {2017},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/j.patcog.2016.10.018},
+url = {https://www.sciencedirect.com/science/article/pii/S003132031630334X},
+author = {Muthukaruppan Swaminathan and Pankaj Kumar Yadav and Obdulio Piloto and Tobias Sjöblom and Ian Cheong},
+keywords = {Poisson-Binomial distribution, Semi-metric distance, Non-identical data, Distance measure, Image classification, Image recognition},
+}
+
+@INPROCEEDINGS{rebaudengo:99:test,
+author={Rebaudengo, M. and Sonza Reorda, M.},
+booktitle={Proceedings 17th IEEE VLSI Test Symposium (Cat. No.PR00146)},
+title={Evaluating the fault tolerance capabilities of embedded systems via BDM},
+year={1999},
+volume={},
+number={},
+pages={452-457},
+keywords={Fault tolerant systems;Embedded system;Circuit faults;Microprocessors;Costs;Micromotors;Registers;Prototypes;Telecommunication computing;Rail transportation},
+doi={10.1109/VTEST.1999.766703}
+}
+
+@INPROCEEDINGS{folkesson:98:ftcs,
+author={Folkesson, P. and Svensson, S. and Karlsson, J.},
+booktitle={Digest of Papers. Twenty-Eighth Annual International Symposium on Fault-Tolerant Computing (Cat. No.98CB36224)},
+title={A comparison of simulation based and scan chain implemented fault injection},
+year={1998},
+volume={},
+number={},
+pages={284-293},
+keywords={Pipelines;Microprocessors;Error correction;Computational modeling;Processor scheduling;Clocks;Laboratories;Reduced instruction set computing;Delay effects;Energy consumption},
+doi={10.1109/FTCS.1998.689479}
+}
+
+@InProceedings{hannius:12:safecomp,
+author="Hannius, Olof and Karlsson, Johan",
+editor="Ortmeier, Frank and Daniel, Peter",
+title="Impact of Soft Errors in a Jet Engine Controller",
+booktitle="Computer Safety, Reliability, and Security",
+year="2012",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="223--234",
+isbn="978-3-642-33678-2"
+}
+
+@article{jedec85a:21,
+  title={JESD85A: Methods for Calculating Failure Rates in Units of FITs},
+  author={JEDEC Solid State Technology Association},
+  year={2021},
+  month={July},
+  url={https://www.jedec.org/system/files/docs/JESD85A.pdf},
+  urldate={2024-03-28},
+}
+

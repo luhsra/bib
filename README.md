@@ -14,7 +14,7 @@ The Bibliographic Repository of the Systems Research and Architecture Group (SRA
 ## Policies
 
 This section provides recommended practices how to add new references.
-However, expect to find _a lot of_ entries that does not follow this guidance.
+However, expect to find _a lot of_ entries that do not follow this guidance.
 
 ### Website citations
 

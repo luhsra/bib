@@ -28,3 +28,8 @@ Do it with `online`:
   year={2023}
 }
 ```
+
+### URLs to PDFs
+
+There seems not to be a specific field for PDF links (in the BibLaTeX documentation, `url` is the closest but separately printed).
+Therefore, we use an extra field `x-pdf` for that.

@@ -1,0 +1,260 @@
+@article{aguilera:23:osr,
+  title = {Memory Disaggregation: Why Now and What Are the Challenges},
+  shorttitle = {Memory Disaggregation},
+  author = {Aguilera, Marcos K. and Amaro, Emmanuel and Amit, Nadav and Hunhoff, Erika and Yelam, Anil and Zellweger, Gerd},
+  year = {2023},
+  month = jun,
+  journal = {SIGOPS Opererating System Review},
+  series = {{{OSR}}},
+  volume = {57},
+  number = {1},
+  pages = {38--46},
+  issn = {0163-5980},
+  doi = {10.1145/3606557.3606563},
+  urldate = {2024-09-19},
+  abstract = {Hardware disaggregation has emerged as one of the most fundamental shifts in how we build computer systems over the past decades. While disaggregation has been successful for several types of resources (storage, power, and others), memory disaggregation has yet to happen. We make the case that the time for memory disaggregation has arrived. We look at past successful disaggregation stories and learn that their success depended on two requirements: addressing a burning issue and being technically feasible. We examine memory disaggregation through this lens and find that both requirements are finally met. Once available, memory disaggregation will require software support to be used effectively. We discuss some of the challenges of designing an operating system that can utilize disaggregated memory for itself and its applications.},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/R8GBMR5R/Aguilera et al_2023_Memory disaggregation.pdf}
+}
+% == BibTeX quality report for aguilera:23:osr:
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Series title ("SIGOPS Operating System Review")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3606557.3606563")
+
+@techreport{ang:20:report,
+  title = {Decadal {{Plan}} for {{Semiconductors}} - {{Abridged Report}}},
+  author = {Ang, James and Apalkov, Dmytro and Assaderaghi, Fari and Cavin, Ralph and Chauhan, Ramesh and Chen, An and Chow, Richard and Clark, Robert and Cope, Maryam and Delise, Debra and Diaz, Carlos and Doering, Bob and Eilert, Sean and Hansen, Ken and Haroun, Baher and Heo, Yeon-Cheol and Herrera, Gilbert and Kemp, Kevin and Kwak, Donny and Loh, Lawrence and Shahidi, Ghavam and Son, Steve and Somervell, Mark and Vandentop, Gilroy and Zvonar, Zoran},
+  year = {2020},
+  langid = {english},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/J3KG8Q7Y/Ang et al. - Decadal Plan Executive Committee.pdf}
+}
+% == BibTeX quality report for ang:20:report:
+% Missing required field 'institution'
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("Zotero")
+
+@misc{ham:24:arxiv,
+  title = {Low-Overhead {{General-purpose Near-Data Processing}} in {{CXL Memory Expanders}}},
+  author = {Ham, Hyungkyu and Hong, Jeongmin and Park, Geonwoo and Shin, Yunseon and Woo, Okkyun and Yang, Wonhyuk and Bae, Jinhoon and Park, Eunhyeok and Sung, Hyojin and Lim, Euicheol and Kim, Gwangsun},
+  year = {2024},
+  month = apr,
+  number = {2404.19381v2},
+  eprint = {2404.19381v2},
+  publisher = {arXiv},
+  urldate = {2024-09-19},
+  abstract = {M2NDP -- Memory-Mapped Near Data Processing},
+  archiveprefix = {arXiv},
+  langid = {english},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/C5S788UW/Ham et al_2024_Low-overhead General-purpose Near-Data Processing in CXL Memory Expanders.pdf}
+}
+% == BibTeX quality report for ham:24:arxiv:
+% ? unused Url ("https://arxiv.org/abs/2404.19381v2")
+
+@inproceedings{iyer:23:sosp,
+  title = {Achieving {{Microsecond-Scale Tail Latency Efficiently}} with {{Approximate Optimal Scheduling}}},
+  booktitle = {Proceedings of the 29th {{Symposium}} on {{Operating Systems Principles}}},
+  author = {Iyer, Rishabh and Unal, Musa and Kogias, Marios and Candea, George},
+  year = {2023},
+  month = oct,
+  series = {{{SOSP}}},
+  pages = {466--481},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3600006.3613136},
+  urldate = {2024-09-05},
+  abstract = {Datacenter applications expect microsecond-scale service times and tightly bound tail latency, with future workloads expected to be even more demanding. To address this challenge, state-of-the-art runtimes employ theoretically optimal scheduling policies, namely a single request queue and strict preemption.We present Concord, a runtime that demonstrates how forgoing this design---while still closely approximating it---enables a significant improvement in application throughput while maintaining tight tail-latency SLOs. We evaluate Concord on microbenchmarks and Google's LevelDB key-value store; compared to the state of the art, Concord improves application throughput by up to 52\% on microbenchmarks and by up to 83\% on LevelDB, while meeting the same tail-latency SLOs. Unlike the state of the art, Concord is application agnostic and does not rely on the nonstandard use of hardware, which makes it immediately de-ployable in the public cloud. Concord is publicly available at https://dslab.epfl.ch/research/concord.},
+  isbn = {9798400702297},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/KE6MCWUY/Iyer et al_2023_Achieving Microsecond-Scale Tail Latency Efficiently with Approximate Optimal.pdf}
+}
+% == BibTeX quality report for iyer:23:sosp:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3600006.3613136")
+
+@inproceedings{kaffes:19:nsdi,
+  title = {Shinjuku: {{Preemptive Scheduling}} for \{{$\mu$}second-Scale\} {{Tail Latency}}},
+  shorttitle = {Shinjuku},
+  booktitle = {16th {{USENIX Symposium}} on {{Networked Systems Design}} and {{Implementation}} ({{NSDI}} 19)},
+  author = {Kaffes, Kostis and Chong, Timothy and Humphries, Jack Tigar and Belay, Adam and Mazi{\`e}res, David and Kozyrakis, Christos},
+  year = {2019},
+  series = {{{NSDI}}},
+  pages = {345--360},
+  urldate = {2024-09-05},
+  isbn = {978-1-931971-49-2},
+  langid = {english},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/ZIKXK467/Kaffes et al_2019_Shinjuku.pdf}
+}
+% == BibTeX quality report for kaffes:19:nsdi:
+% ? Unsure about the formatting of the booktitle
+% ? unused Library catalog ("www.usenix.org")
+% ? unused Url ("https://www.usenix.org/conference/nsdi19/presentation/kaffes")
+
+@inproceedings{lee:23:damon,
+  title = {Elastic {{Use}} of {{Far Memory}} for {{In-Memory Database Management Systems}}},
+  booktitle = {Proceedings of the 19th {{International Workshop}} on {{Data Management}} on {{New Hardware}}},
+  author = {Lee, Donghun and Willhalm, Thomas and Ahn, Minseon and Mutalik Desai, Suprasad and Booss, Daniel and Singh, Navneet and Ritter, Daniel and Kim, Jungmin and Rebholz, Oliver},
+  year = {2023},
+  month = jun,
+  series = {{{DaMoN}}},
+  pages = {35--43},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3592980.3595311},
+  urldate = {2024-09-19},
+  abstract = {The separation and independent scalability of compute and memory is one of the crucial aspects for modern in-memory database systems (IMDBMSs) in the cloud. The new, cache-coherent memory interconnect Compute Express Link (CXL) promises elastic memory capacity through memory pooling. In this work, we adapt the well-known IMDBMS, SAP HANA, for memory pools by features of table data placement and operational heap memory allocation on far memory, and study the impact of the limited bandwidth and higher latency of CXL. Our results show negligible performance degradation for TPC-C. For the analytical workloads of TPC-H, a notable impact on query processing is observed due to the limited bandwidth and long latency of our early CXL implementation. However, our emulation shows it would be acceptably smaller with the improved CXL memory devices.},
+  isbn = {9798400701917},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/GW8NZ26C/Lee et al_2023_Elastic Use of Far Memory for In-Memory Database Management Systems.pdf}
+}
+% == BibTeX quality report for lee:23:damon:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3592980.3595311")
+
+@article{lerner:24:vldba,
+  title = {{{CXL}} and the {{Return}} of {{Scale-Up Database Engines}}},
+  author = {Lerner, Alberto and Alonso, Gustavo},
+  year = {2024},
+  month = aug,
+  journal = {Proc. VLDB Endowement},
+  series = {{{VLDB}}},
+  volume = {17},
+  number = {10},
+  pages = {2568--2575},
+  issn = {2150-8097},
+  doi = {10.14778/3675034.3675047},
+  urldate = {2024-09-10},
+  abstract = {CXL allows to revive an old DBMS design by having a shared machine from an entire rack. The paper is a very good overview on CXL.},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/BST29GNK/Lerner_Alonso_2024_CXL and the Return of Scale-Up Database Engines.pdf}
+}
+% == BibTeX quality report for lerner:24:vldba:
+% ? Possibly abbreviated journal title Proc. VLDB Endowement
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://doi.org/10.14778/3675034.3675047")
+
+@inproceedings{li:23:asplos,
+  title = {Pond: {{CXL-Based Memory Pooling Systems}} for {{Cloud Platforms}}},
+  shorttitle = {Pond},
+  booktitle = {Proceedings of the 28th {{ACM International Conference}} on {{Architectural Support}} for {{Programming Languages}} and {{Operating Systems}}, {{Volume}} 2},
+  author = {Li, Huaicheng and Berger, Daniel S. and Hsu, Lisa and Ernst, Daniel and Zardoshti, Pantea and Novakovic, Stanko and Shah, Monish and Rajadnya, Samir and Lee, Scott and Agarwal, Ishwar and Hill, Mark D. and Fontoura, Marcus and Bianchini, Ricardo},
+  year = {2023},
+  month = jan,
+  series = {{{ASPLOS}}},
+  pages = {574--587},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3575693.3578835},
+  urldate = {2024-09-19},
+  abstract = {Public cloud providers seek to meet stringent performance requirements and low hardware cost. A key driver of performance and cost is main memory. Memory pooling promises to improve DRAM utilization and thereby reduce costs. However, pooling is challenging under cloud performance requirements. This paper proposes Pond, the first memory pooling system that both meets cloud performance goals and significantly reduces DRAM cost. Pond builds on the Compute Express Link (CXL) standard for load/store access to pool memory and two key insights. First, our analysis of cloud production traces shows that pooling across 8-16 sockets is enough to achieve most of the benefits. This enables a small-pool design with low access latency. Second, it is possible to create machine learning models that can accurately predict how much local and pool memory to allocate to a virtual machine (VM) to resemble same-NUMA-node memory performance. Our evaluation with 158 workloads shows that Pond reduces DRAM costs by 7\% with performance within 1-5\% of same-NUMA-node VM allocations.},
+  isbn = {978-1-4503-9916-6},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/4RSBLTC8/Li et al_2023_Pond.pdf}
+}
+% == BibTeX quality report for li:23:asplos:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3575693.3578835")
+
+@inproceedings{li:24:hpca,
+  title = {{{LibPreemptible}}: {{Enabling Fast}}, {{Adaptive}}, and {{Hardware-Assisted User-Space Scheduling}}},
+  shorttitle = {{{LibPreemptible}}},
+  booktitle = {2024 {{IEEE International Symposium}} on {{High-Performance Computer Architecture}} ({{HPCA}})},
+  author = {Li, Yueying and Lazarev, Nikita and Koufaty, David and Yin, Tenny and Anderson, Andy and Zhang, Zhiru and Suh, G. Edward and Kaffes, Kostis and Delimitrou, Christina},
+  year = {2024},
+  month = mar,
+  series = {{{HPCA}}},
+  pages = {922--936},
+  issn = {2378-203X},
+  doi = {10.1109/HPCA57654.2024.00075},
+  urldate = {2024-09-05},
+  abstract = {Modern cloud applications are prone to high tail latencies since their requests typically follow highly-dispersive distributions. Prior work has proposed both OS- and systemlevel solutions to reduce tail latencies for microsecond-scale workloads through better scheduling. Unfortunately, existing approaches like customized dataplane OSes, require significant OS changes, experience scalability limitations, or do not reach the full performance capabilities hardware offers. We propose LibPreemptible, a preemptive user-level threading library that is flexible, lightweight, and scalable. LibPreemptible is based on three key techniques: 1) a fast and lightweight hardware mechanism for delivery of timed interrupts, 2) a general-purpose user-level scheduling interface, and 3) an API for users to express adaptive scheduling policies tailored to the needs of their applications. Compared to the prior state-of-the-art scheduling system Shinjuku, our system achieves significant tail latency and throughput improvements for various workloads without the need to modify the kernel. We also demonstrate the flexibility of LibPreemptible across scheduling policies for real applications experiencing varying load levels and characteristics.},
+  keywords = {Adaptive scheduling,cloud computing,Computer architecture,datacenter,Dynamic scheduling,Performance and quality of service,Processor scheduling,Scalability,scheduling,Tail,Throughput},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/FEP67KYX/Li et al_2024_LibPreemptible.pdf;/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/EHYM3GD9/10476424.html}
+}
+% == BibTeX quality report for li:24:hpca:
+% ? Unsure about the formatting of the booktitle
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("IEEE Xplore")
+% ? unused Url ("https://ieeexplore.ieee.org/abstract/document/10476424")
+
+@misc{mansi:24:arxiv,
+  title = {Characterizing {{Physical Memory Fragmentation}}},
+  author = {Mansi, Mark and Swift, Michael M.},
+  year = {2024},
+  month = jan,
+  number = {arXiv:2401.03523},
+  eprint = {2401.03523},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-08-05},
+  abstract = {External fragmentation of physical memory occurs when adjacent differently sized regions of allocated physical memory are freed at different times, causing free memory to be physically discontiguous. It can significantly degrade system performance and efficiency, such as reducing the ability to use huge pages, a critical optimization on modern large-memory system. For decades system developers have sought to avoid and mitigate fragmentation, but few prior studies quantify and characterize it in production settings.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Operating Systems,Computer Science - Performance,D.4.2},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/DGWZCWZ2/Mansi and Swift - 2024 - Characterizing Physical Memory Fragmentation.pdf}
+}
+% == BibTeX quality report for mansi:24:arxiv:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Url ("http://arxiv.org/abs/2401.03523")
+
+@inproceedings{maruf:23:asplos,
+  title = {{{TPP}}: {{Transparent Page Placement}} for {{CXL-Enabled Tiered-Memory}}},
+  shorttitle = {{{TPP}}},
+  booktitle = {Proceedings of the 28th {{ACM International Conference}} on {{Architectural Support}} for {{Programming Languages}} and {{Operating Systems}}, {{Volume}} 3},
+  author = {Maruf, Hasan Al and Wang, Hao and Dhanotia, Abhishek and Weiner, Johannes and Agarwal, Niket and Bhattacharya, Pallab and Petersen, Chris and Chowdhury, Mosharaf and Kanaujia, Shobhit and Chauhan, Prakash},
+  year = {2023},
+  month = mar,
+  series = {{{ASPLOS}}},
+  pages = {742--755},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3582016.3582063},
+  urldate = {2024-09-19},
+  abstract = {CXL Memory was used as an additional Memory Tier.},
+  isbn = {978-1-4503-9918-0},
+  keywords = {Chris},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/KK2XRECS/Maruf et al_2023_TPP.pdf}
+}
+% == BibTeX quality report for maruf:23:asplos:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3582016.3582063")
+
+@inproceedings{stavrakakis:24:dsn,
+  title = {{{SPP}}: {{Safe Persistent Pointers}} for {{Memory Safety}}},
+  shorttitle = {{{SPP}}},
+  booktitle = {2024 54th {{Annual IEEE}}/{{IFIP International Conference}} on {{Dependable Systems}} and {{Networks}} ({{DSN}})},
+  author = {Stavrakakis, Dimitrios and Panfil, Alexandrina and Nam, {\relax Mj}in and Bhatotia, Pramod},
+  year = {2024},
+  month = jun,
+  series = {{{DSN}}},
+  pages = {37--52},
+  publisher = {IEEE},
+  address = {Brisbane, Australia},
+  doi = {10.1109/DSN58291.2024.00019},
+  urldate = {2024-09-20},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {9798350341058},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/UPXULB8F/Stavrakakis et al. - 2024 - SPP Safe Persistent Pointers for Memory Safety.pdf}
+}
+% == BibTeX quality report for stavrakakis:24:dsn:
+% ? Unsure about the formatting of the booktitle
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("DOI.org (Crossref)")
+% ? unused Url ("https://ieeexplore.ieee.org/document/10646901/")
+
+@inproceedings{wang:23:osdi,
+  title = {{{BWoS}}: {{Formally Verified Block-based Work Stealing}} for {{Parallel Processing}}},
+  shorttitle = {\{\vphantom\}{{BWoS}}\vphantom\{\}},
+  booktitle = {17th {{USENIX Symposium}} on {{Operating Systems Design}} and {{Implementation}} ({{OSDI}} 23)},
+  author = {Wang, Jiawei and Trach, Bohdan and Fu, Ming and Behrens, Diogo and Schwender, Jonathan and Liu, Yutao and Lei, Jitang and Vafeiadis, Viktor and H{\"a}rtig, Hermann and Chen, Haibo},
+  year = {2023},
+  series = {{{OSDI}}},
+  pages = {833--850},
+  urldate = {2024-09-05},
+  isbn = {978-1-939133-34-2},
+  langid = {english},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/9YAUIXZE/Wang et al_2023_ BWoS .pdf}
+}
+% == BibTeX quality report for wang:23:osdi:
+% ? Unsure about the formatting of the booktitle
+% ? unused Library catalog ("www.usenix.org")
+% ? unused Url ("https://www.usenix.org/conference/osdi23/presentation/wang-jiawei")

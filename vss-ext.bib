@@ -318,6 +318,27 @@
 % ? unused Library catalog ("DOI.org (Crossref)")
 % ? unused Url ("https://ieeexplore.ieee.org/document/10646901/")
 
+@inproceedings{suchy:20:pldi2020,
+  title = {{{CARAT}}: A Case for Virtual Memory through Compiler- and Runtime-Based Address Translation},
+  shorttitle = {{{CARAT}}},
+  booktitle = {Proceedings of the 41st {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
+  author = {Suchy, Brian and Campanoni, Simone and Hardavellas, Nikos and Dinda, Peter},
+  year = {2020},
+  month = jun,
+  series = {{{PLDI}} 2020},
+  pages = {329--345},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3385412.3385987},
+  urldate = {2024-09-23},
+  abstract = {Virtual memory is a critical abstraction in modern computer systems. Its common model, paging, is currently seeing considerable innovation, yet its implementations continue to be co-designs between power-hungry/latency-adding hardware (e.g., TLBs, pagewalk caches, pagewalkers, etc) and software (the OS kernel). We make a case for a new model for virtual memory, compiler- and runtime-based address translation (CARAT), which instead is a co-design between the compiler and the OS kernel. CARAT can operate without any hardware support, although it could also be retrofitted into a traditional paging model, and could leverage simpler hardware support. CARAT uses compile-time transformations and optimizations combined with tightly-coupled runtime/kernel interaction to generate programs that run efficiently in a physical address space, but nonetheless allow the kernel to maintain protection and dynamically manage physical memory similar to what is possible using traditional virtual memory. We argue for the feasibility of CARAT through an empirical study of application characteristics and kernel behavior, as well as through the design, implementation, and performance evaluation of a CARAT prototype. Because our prototype works at the IR level (in particular, via LLVM bitcode), it can be applied to most C and C++ programs with minimal or no restrictions.},
+  isbn = {978-1-4503-7613-6},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/5RPTLDSW/Suchy et al. - 2020 - CARAT a case for virtual memory through compiler- and runtime-based address translation.pdf}
+}
+% == BibTeX quality report for suchy:20:pldi2020:
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3385412.3385987")
+
 @inproceedings{wang:23:osdi,
   title = {{{BWoS}}: {{Formally Verified Block-based Work Stealing}} for {{Parallel Processing}}},
   shorttitle = {\{\vphantom\}{{BWoS}}\vphantom\{\}},

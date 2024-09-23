@@ -1,3 +1,22 @@
+@inproceedings{abbasi:19:2iesspe,
+  title = {Challenges in {{Designing Exploit Mitigations}} for {{Deeply Embedded Systems}}},
+  booktitle = {2019 {{IEEE European Symposium}} on {{Security}} and {{Privacy}} ({{EuroS}}\&{{P}})},
+  author = {Abbasi, Ali and Wetzels, Jos and Holz, Thorsten and Etalle, Sandro},
+  year = {2019},
+  month = jun,
+  pages = {31--46},
+  doi = {10.1109/EuroSP.2019.00013},
+  urldate = {2024-09-23},
+  abstract = {Memory corruption vulnerabilities have been around for decades and rank among the most prevalent vulnerabilities in embedded systems. Yet this constrained environment poses unique design and implementation challenges that significantly complicate the adoption of common hardening techniques. Combined with the irregular and involved nature of embedded patch management, this results in prolonged vulnerability exposure windows and vulnerabilities that are relatively easy to exploit. Considering the sensitive and critical nature of many embedded systems, this situation merits significant improvement. In this work, we present the first quantitative study of exploit mitigation adoption in 42 embedded operating systems, showing the embedded world to significantly lag behind the general-purpose world. To improve the security of deeply embedded systems, we subsequently present {$\mu$}Armor, an approach to address some of the key gaps identified in our quantitative analysis. {$\mu$}Armor raises the bar for exploitation of embedded memory corruption vulnerabilities, while being adoptable on the short term without incurring prohibitive extra performance or storage costs.},
+  keywords = {Embedded System,Embedded systems,Exploit Mitigation,Exploiting,Hardware,Linux,Real-time systems,Security,Statistical analysis},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/YJP6JXA4/Abbasi et al. - 2019 - Challenges in Designing Exploit Mitigations for Deeply Embedded Systems.pdf}
+}
+% == BibTeX quality report for abbasi:19:2iesspe:
+% ? Unsure about the formatting of the booktitle
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("IEEE Xplore")
+% ? unused Url ("https://ieeexplore.ieee.org/document/8806725")
+
 @article{aguilera:23:osr,
   title = {Memory Disaggregation: Why Now and What Are the Challenges},
   shorttitle = {Memory Disaggregation},
@@ -31,6 +50,26 @@
 % Missing required field 'institution'
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("Zotero")
+
+@inproceedings{clements:17:2issps,
+  title = {Protecting {{Bare-Metal Embedded Systems}} with {{Privilege Overlays}}},
+  booktitle = {2017 {{IEEE Symposium}} on {{Security}} and {{Privacy}} ({{SP}})},
+  author = {Clements, Abraham A. and Almakhdhub, Naif Saleh and Saab, Khaled S. and Srivastava, Prashast and Koo, Jinkyu and Bagchi, Saurabh and Payer, Mathias},
+  year = {2017},
+  month = may,
+  pages = {289--303},
+  issn = {2375-1207},
+  doi = {10.1109/SP.2017.37},
+  urldate = {2024-09-23},
+  abstract = {Embedded systems are ubiquitous in every aspect of modern life. As the Internet of Thing expands, our dependence on these systems increases. Many of these interconnected systems are and will be low cost bare-metal systems, executing without an operating system. Bare-metal systems rarely employ any security protection mechanisms and their development assumptions (unrestricted access to all memory and instructions), and constraints(runtime, energy, and memory) makes applying protections challenging. To address these challenges we present EPOXY, an LLVM-based embedded compiler. We apply a novel technique, called privilege overlaying, wherein operations requiring privileged execution are identified and only these operations execute in privileged mode. This provides the foundation on which code-integrity, adapted control-flow hijacking defenses, and protections for sensitive IO are applied. We also design fine-grained randomization schemes, that work within the constraints of bare-metal systems to provide further protection against control-flow and data corruption attacks. These defenses prevent code injection attacks and ROP attacks from scaling across large sets of devices. We evaluate the performance of our combined defense mechanisms for a suite of 75 benchmarks and 3 real-world IoT applications. Our results for the application case studies show that EPOXY has, on average, a 1.8\% increase in execution time and a 0.5\% increase in energy usage.},
+  keywords = {Bare-metal,Cyber-Security,Diversity,Embedded systems,Embedded Systems,Hardware,Memory management,Privilege Overlay,Random access memory,Registers,Runtime,Security},
+  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/LFZLF29U/Clements et al. - 2017 - Protecting Bare-Metal Embedded Systems with Privilege Overlays.pdf}
+}
+% == BibTeX quality report for clements:17:2issps:
+% ? Unsure about the formatting of the booktitle
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("IEEE Xplore")
+% ? unused Url ("https://ieeexplore.ieee.org/document/7958583")
 
 @inproceedings{gouk:22:atc,
   title = {Direct {{Access}}, {{High-Performance Memory Disaggregation}} with {{DirectCXL}}},

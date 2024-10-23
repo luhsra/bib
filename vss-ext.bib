@@ -1,17 +1,16 @@
-@inproceedings{abbasi:19:2iesspe,
+@inproceedings{abbasi:19:eurosp,
   title = {Challenges in {{Designing Exploit Mitigations}} for {{Deeply Embedded Systems}}},
   booktitle = {2019 {{IEEE European Symposium}} on {{Security}} and {{Privacy}} ({{EuroS}}\&{{P}})},
   author = {Abbasi, Ali and Wetzels, Jos and Holz, Thorsten and Etalle, Sandro},
   year = {2019},
   month = jun,
+  series = {{{EuroSP}}},
   pages = {31--46},
   doi = {10.1109/EuroSP.2019.00013},
   urldate = {2024-09-23},
-  abstract = {Memory corruption vulnerabilities have been around for decades and rank among the most prevalent vulnerabilities in embedded systems. Yet this constrained environment poses unique design and implementation challenges that significantly complicate the adoption of common hardening techniques. Combined with the irregular and involved nature of embedded patch management, this results in prolonged vulnerability exposure windows and vulnerabilities that are relatively easy to exploit. Considering the sensitive and critical nature of many embedded systems, this situation merits significant improvement. In this work, we present the first quantitative study of exploit mitigation adoption in 42 embedded operating systems, showing the embedded world to significantly lag behind the general-purpose world. To improve the security of deeply embedded systems, we subsequently present {$\mu$}Armor, an approach to address some of the key gaps identified in our quantitative analysis. {$\mu$}Armor raises the bar for exploitation of embedded memory corruption vulnerabilities, while being adoptable on the short term without incurring prohibitive extra performance or storage costs.},
-  keywords = {Embedded System,Embedded systems,Exploit Mitigation,Exploiting,Hardware,Linux,Real-time systems,Security,Statistical analysis},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/YJP6JXA4/Abbasi et al. - 2019 - Challenges in Designing Exploit Mitigations for Deeply Embedded Systems.pdf}
+  keywords = {Embedded System,Embedded systems,Exploit Mitigation,Exploiting,Hardware,Linux,Real-time systems,Security,Statistical analysis}
 }
-% == BibTeX quality report for abbasi:19:2iesspe:
+% == BibTeX quality report for abbasi:19:eurosp:
 % ? Unsure about the formatting of the booktitle
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("IEEE Xplore")
@@ -30,9 +29,7 @@
   pages = {38--46},
   issn = {0163-5980},
   doi = {10.1145/3606557.3606563},
-  urldate = {2024-09-19},
-  abstract = {Hardware disaggregation has emerged as one of the most fundamental shifts in how we build computer systems over the past decades. While disaggregation has been successful for several types of resources (storage, power, and others), memory disaggregation has yet to happen. We make the case that the time for memory disaggregation has arrived. We look at past successful disaggregation stories and learn that their success depended on two requirements: addressing a burning issue and being technically feasible. We examine memory disaggregation through this lens and find that both requirements are finally met. Once available, memory disaggregation will require software support to be used effectively. We discuss some of the challenges of designing an operating system that can utilize disaggregated memory for itself and its applications.},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/R8GBMR5R/Aguilera et al_2023_Memory disaggregation.pdf}
+  urldate = {2024-09-19}
 }
 % == BibTeX quality report for aguilera:23:osr:
 % ? unused Library catalog ("ACM Digital Library")
@@ -43,33 +40,52 @@
   title = {Decadal {{Plan}} for {{Semiconductors}} - {{Abridged Report}}},
   author = {Ang, James and Apalkov, Dmytro and Assaderaghi, Fari and Cavin, Ralph and Chauhan, Ramesh and Chen, An and Chow, Richard and Clark, Robert and Cope, Maryam and Delise, Debra and Diaz, Carlos and Doering, Bob and Eilert, Sean and Hansen, Ken and Haroun, Baher and Heo, Yeon-Cheol and Herrera, Gilbert and Kemp, Kevin and Kwak, Donny and Loh, Lawrence and Shahidi, Ghavam and Son, Steve and Somervell, Mark and Vandentop, Gilroy and Zvonar, Zoran},
   year = {2020},
-  langid = {english},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/J3KG8Q7Y/Ang et al. - Decadal Plan Executive Committee.pdf}
+  langid = {english}
 }
 % == BibTeX quality report for ang:20:report:
 % Missing required field 'institution'
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("Zotero")
 
-@inproceedings{clements:17:2issps,
+@inproceedings{clements:17:sp,
   title = {Protecting {{Bare-Metal Embedded Systems}} with {{Privilege Overlays}}},
   booktitle = {2017 {{IEEE Symposium}} on {{Security}} and {{Privacy}} ({{SP}})},
   author = {Clements, Abraham A. and Almakhdhub, Naif Saleh and Saab, Khaled S. and Srivastava, Prashast and Koo, Jinkyu and Bagchi, Saurabh and Payer, Mathias},
   year = {2017},
   month = may,
+  series = {{{SP}}},
   pages = {289--303},
   issn = {2375-1207},
   doi = {10.1109/SP.2017.37},
   urldate = {2024-09-23},
-  abstract = {Embedded systems are ubiquitous in every aspect of modern life. As the Internet of Thing expands, our dependence on these systems increases. Many of these interconnected systems are and will be low cost bare-metal systems, executing without an operating system. Bare-metal systems rarely employ any security protection mechanisms and their development assumptions (unrestricted access to all memory and instructions), and constraints(runtime, energy, and memory) makes applying protections challenging. To address these challenges we present EPOXY, an LLVM-based embedded compiler. We apply a novel technique, called privilege overlaying, wherein operations requiring privileged execution are identified and only these operations execute in privileged mode. This provides the foundation on which code-integrity, adapted control-flow hijacking defenses, and protections for sensitive IO are applied. We also design fine-grained randomization schemes, that work within the constraints of bare-metal systems to provide further protection against control-flow and data corruption attacks. These defenses prevent code injection attacks and ROP attacks from scaling across large sets of devices. We evaluate the performance of our combined defense mechanisms for a suite of 75 benchmarks and 3 real-world IoT applications. Our results for the application case studies show that EPOXY has, on average, a 1.8\% increase in execution time and a 0.5\% increase in energy usage.},
-  keywords = {Bare-metal,Cyber-Security,Diversity,Embedded systems,Embedded Systems,Hardware,Memory management,Privilege Overlay,Random access memory,Registers,Runtime,Security},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/LFZLF29U/Clements et al. - 2017 - Protecting Bare-Metal Embedded Systems with Privilege Overlays.pdf}
+  keywords = {Bare-metal,Cyber-Security,Diversity,Embedded systems,Embedded Systems,Hardware,Memory management,Privilege Overlay,Random access memory,Registers,Runtime,Security}
 }
-% == BibTeX quality report for clements:17:2issps:
+% == BibTeX quality report for clements:17:sp:
 % ? Unsure about the formatting of the booktitle
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("IEEE Xplore")
 % ? unused Url ("https://ieeexplore.ieee.org/document/7958583")
+
+@article{eaton:19:pacai,
+  title = {A {{Lightweight Approach}} to {{Academic Research Group Management Using Online Tools}}: {{Spend More Time}} on {{Research}} and {{Less}} on {{Management}}},
+  shorttitle = {A {{Lightweight Approach}} to {{Academic Research Group Management Using Online Tools}}},
+  author = {Eaton, Eric},
+  year = {2019},
+  month = jul,
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume = {33},
+  number = {01},
+  pages = {9644--9647},
+  issn = {2374-3468},
+  doi = {10.1609/aaai.v33i01.33019644},
+  urldate = {2024-09-25},
+  copyright = {Copyright (c) 2019 Association for the Advancement of Artificial Intelligence},
+  langid = {english}
+}
+% == BibTeX quality report for eaton:19:pacai:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ojs.aaai.org")
+% ? unused Url ("https://ojs.aaai.org/index.php/AAAI/article/view/5028")
 
 @inproceedings{gouk:22:atc,
   title = {Direct {{Access}}, {{High-Performance Memory Disaggregation}} with {{DirectCXL}}},
@@ -79,8 +95,7 @@
   series = {{{ATC}}},
   pages = {287--294},
   urldate = {2024-09-20},
-  langid = {english},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/LA6VQ2AS/Gouk et al. - 2022 - Direct Access, High-Performance Memory Disaggregation with DirectCXL .pdf}
+  langid = {english}
 }
 % == BibTeX quality report for gouk:22:atc:
 % ? Unsure about the formatting of the booktitle
@@ -97,13 +112,31 @@
   eprint = {2404.19381v2},
   publisher = {arXiv},
   urldate = {2024-09-19},
-  abstract = {M2NDP -- Memory-Mapped Near Data Processing},
   archiveprefix = {arXiv},
-  langid = {english},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/C5S788UW/Ham et al_2024_Low-overhead General-purpose Near-Data Processing in CXL Memory Expanders.pdf}
+  langid = {english}
 }
 % == BibTeX quality report for ham:24:arxiv:
 % ? unused Url ("https://arxiv.org/abs/2404.19381v2")
+
+@inproceedings{iyer:23:p2sosp,
+  title = {Achieving {{Microsecond-Scale Tail Latency Efficiently}} with {{Approximate Optimal Scheduling}}},
+  booktitle = {Proceedings of the 29th {{Symposium}} on {{Operating Systems Principles}}},
+  author = {Iyer, Rishabh and Unal, Musa and Kogias, Marios and Candea, George},
+  year = {2023},
+  month = oct,
+  pages = {466--481},
+  publisher = {ACM},
+  address = {Koblenz Germany},
+  doi = {10.1145/3600006.3613136},
+  urldate = {2024-09-25},
+  isbn = {9798400702297},
+  langid = {english}
+}
+% == BibTeX quality report for iyer:23:p2sosp:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Conference name ("SOSP '23: 29th Symposium on Operating Systems Principles")
+% ? unused Library catalog ("DOI.org (Crossref)")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3600006.3613136")
 
 @inproceedings{iyer:23:sosp,
   title = {Achieving {{Microsecond-Scale Tail Latency Efficiently}} with {{Approximate Optimal Scheduling}}},
@@ -117,14 +150,28 @@
   address = {New York, NY, USA},
   doi = {10.1145/3600006.3613136},
   urldate = {2024-09-05},
-  abstract = {Datacenter applications expect microsecond-scale service times and tightly bound tail latency, with future workloads expected to be even more demanding. To address this challenge, state-of-the-art runtimes employ theoretically optimal scheduling policies, namely a single request queue and strict preemption.We present Concord, a runtime that demonstrates how forgoing this design---while still closely approximating it---enables a significant improvement in application throughput while maintaining tight tail-latency SLOs. We evaluate Concord on microbenchmarks and Google's LevelDB key-value store; compared to the state of the art, Concord improves application throughput by up to 52\% on microbenchmarks and by up to 83\% on LevelDB, while meeting the same tail-latency SLOs. Unlike the state of the art, Concord is application agnostic and does not rely on the nonstandard use of hardware, which makes it immediately de-ployable in the public cloud. Concord is publicly available at https://dslab.epfl.ch/research/concord.},
-  isbn = {9798400702297},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/KE6MCWUY/Iyer et al_2023_Achieving Microsecond-Scale Tail Latency Efficiently with Approximate Optimal.pdf}
+  isbn = {9798400702297}
 }
 % == BibTeX quality report for iyer:23:sosp:
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
 % ? unused Url ("https://dl.acm.org/doi/10.1145/3600006.3613136")
+
+@inproceedings{kaffes:19:,
+  title = {Shinjuku: {{Preemptive Scheduling}} for \{{$\mu$}second-Scale\} {{Tail Latency}}},
+  shorttitle = {Shinjuku},
+  booktitle = {16th {{USENIX Symposium}} on {{Networked Systems Design}} and {{Implementation}} ({{NSDI}} 19)},
+  author = {Kaffes, Kostis and Chong, Timothy and Humphries, Jack Tigar and Belay, Adam and Mazi{\`e}res, David and Kozyrakis, Christos},
+  year = {2019},
+  pages = {345--360},
+  urldate = {2024-09-25},
+  isbn = {978-1-931971-49-2},
+  langid = {english}
+}
+% == BibTeX quality report for kaffes:19::
+% ? Unsure about the formatting of the booktitle
+% ? unused Library catalog ("www.usenix.org")
+% ? unused Url ("https://www.usenix.org/conference/nsdi19/presentation/kaffes")
 
 @inproceedings{kaffes:19:nsdi,
   title = {Shinjuku: {{Preemptive Scheduling}} for \{{$\mu$}second-Scale\} {{Tail Latency}}},
@@ -136,13 +183,41 @@
   pages = {345--360},
   urldate = {2024-09-05},
   isbn = {978-1-931971-49-2},
-  langid = {english},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/ZIKXK467/Kaffes et al_2019_Shinjuku.pdf}
+  langid = {english}
 }
 % == BibTeX quality report for kaffes:19:nsdi:
 % ? Unsure about the formatting of the booktitle
 % ? unused Library catalog ("www.usenix.org")
 % ? unused Url ("https://www.usenix.org/conference/nsdi19/presentation/kaffes")
+
+@inproceedings{khalil:24:dimes,
+  title = {Fundamental {{OS Design Considerations}} for {{CXL-based Hybrid SSDs}}},
+  author = {Khalil, Yussuf and Werling, Lukas and Gr{\"o}ninger, Thorsten and Bellosa, Frank},
+  year = {2024},
+  series = {{{DIMES}}}
+}
+% == BibTeX quality report for khalil:24:dimes:
+% Missing required field 'booktitle'
+
+@inproceedings{landsberg:24:splc,
+  title = {Should {{I Bother}}? {{Fast Patch Filtering}} for {{Statically-Configured Software Variants}}},
+  shorttitle = {Should {{I Bother}}?},
+  booktitle = {Proceedings of the 28th {{ACM International Systems}} and {{Software Product Line Conference}}},
+  author = {Landsberg, Tobias and Dietrich, Christian and Lohmann, Daniel},
+  year = {2024},
+  month = sep,
+  series = {{{SPLC}} '24},
+  pages = {12--23},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3646548.3672585},
+  urldate = {2024-09-25},
+  isbn = {9798400705939}
+}
+% == BibTeX quality report for landsberg:24:splc:
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3646548.3672585")
 
 @inproceedings{lee:23:damon,
   title = {Elastic {{Use}} of {{Far Memory}} for {{In-Memory Database Management Systems}}},
@@ -156,16 +231,34 @@
   address = {New York, NY, USA},
   doi = {10.1145/3592980.3595311},
   urldate = {2024-09-19},
-  abstract = {The separation and independent scalability of compute and memory is one of the crucial aspects for modern in-memory database systems (IMDBMSs) in the cloud. The new, cache-coherent memory interconnect Compute Express Link (CXL) promises elastic memory capacity through memory pooling. In this work, we adapt the well-known IMDBMS, SAP HANA, for memory pools by features of table data placement and operational heap memory allocation on far memory, and study the impact of the limited bandwidth and higher latency of CXL. Our results show negligible performance degradation for TPC-C. For the analytical workloads of TPC-H, a notable impact on query processing is observed due to the limited bandwidth and long latency of our early CXL implementation. However, our emulation shows it would be acceptably smaller with the improved CXL memory devices.},
-  isbn = {9798400701917},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/GW8NZ26C/Lee et al_2023_Elastic Use of Far Memory for In-Memory Database Management Systems.pdf}
+  isbn = {9798400701917}
 }
 % == BibTeX quality report for lee:23:damon:
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
 % ? unused Url ("https://dl.acm.org/doi/10.1145/3592980.3595311")
 
-@article{lerner:24:vldba,
+@article{leis:24:vldb,
+  title = {Cloud-{{Native Database Systems}} and {{Unikernels}}: {{Reimagining OS Abstractions}} for {{Modern Hardware}}},
+  shorttitle = {Cloud-{{Native Database Systems}} and {{Unikernels}}},
+  author = {Leis, Viktor and Dietrich, Christian},
+  year = {2024},
+  month = may,
+  journal = {Proc. VLDB Endow.},
+  volume = {17},
+  number = {8},
+  pages = {2115--2122},
+  issn = {2150-8097},
+  doi = {10.14778/3659437.3659462},
+  urldate = {2024-09-25}
+}
+% == BibTeX quality report for leis:24:vldb:
+% ? Possibly abbreviated journal title Proc. VLDB Endow.
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.14778/3659437.3659462")
+
+@article{lerner:24:vldb,
   title = {{{CXL}} and the {{Return}} of {{Scale-Up Database Engines}}},
   author = {Lerner, Alberto and Alonso, Gustavo},
   year = {2024},
@@ -177,11 +270,9 @@
   pages = {2568--2575},
   issn = {2150-8097},
   doi = {10.14778/3675034.3675047},
-  urldate = {2024-09-10},
-  abstract = {CXL allows to revive an old DBMS design by having a shared machine from an entire rack. The paper is a very good overview on CXL.},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/BST29GNK/Lerner_Alonso_2024_CXL and the Return of Scale-Up Database Engines.pdf}
+  urldate = {2024-09-10}
 }
-% == BibTeX quality report for lerner:24:vldba:
+% == BibTeX quality report for lerner:24:vldb:
 % ? Possibly abbreviated journal title Proc. VLDB Endowement
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
@@ -200,14 +291,31 @@
   address = {New York, NY, USA},
   doi = {10.1145/3575693.3578835},
   urldate = {2024-09-19},
-  abstract = {Public cloud providers seek to meet stringent performance requirements and low hardware cost. A key driver of performance and cost is main memory. Memory pooling promises to improve DRAM utilization and thereby reduce costs. However, pooling is challenging under cloud performance requirements. This paper proposes Pond, the first memory pooling system that both meets cloud performance goals and significantly reduces DRAM cost. Pond builds on the Compute Express Link (CXL) standard for load/store access to pool memory and two key insights. First, our analysis of cloud production traces shows that pooling across 8-16 sockets is enough to achieve most of the benefits. This enables a small-pool design with low access latency. Second, it is possible to create machine learning models that can accurately predict how much local and pool memory to allocate to a virtual machine (VM) to resemble same-NUMA-node memory performance. Our evaluation with 158 workloads shows that Pond reduces DRAM costs by 7\% with performance within 1-5\% of same-NUMA-node VM allocations.},
-  isbn = {978-1-4503-9916-6},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/4RSBLTC8/Li et al_2023_Pond.pdf}
+  isbn = {978-1-4503-9916-6}
 }
 % == BibTeX quality report for li:23:asplos:
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
 % ? unused Url ("https://dl.acm.org/doi/10.1145/3575693.3578835")
+
+@inproceedings{li:24:2iishcah,
+  title = {{{LibPreemptible}}: {{Enabling Fast}}, {{Adaptive}}, and {{Hardware-Assisted User-Space Scheduling}}},
+  shorttitle = {{{LibPreemptible}}},
+  booktitle = {2024 {{IEEE International Symposium}} on {{High-Performance Computer Architecture}} ({{HPCA}})},
+  author = {Li, Yueying and Lazarev, Nikita and Koufaty, David and Yin, Tenny and Anderson, Andy and Zhang, Zhiru and Suh, G. Edward and Kaffes, Kostis and Delimitrou, Christina},
+  year = {2024},
+  month = mar,
+  pages = {922--936},
+  issn = {2378-203X},
+  doi = {10.1109/HPCA57654.2024.00075},
+  urldate = {2024-09-25},
+  keywords = {Adaptive scheduling,cloud computing,Computer architecture,datacenter,Dynamic scheduling,Performance and quality of service,Processor scheduling,Scalability,scheduling,Tail,Throughput}
+}
+% == BibTeX quality report for li:24:2iishcah:
+% ? Unsure about the formatting of the booktitle
+% ? Title looks like it was stored in title-case in Zotero
+% ? unused Library catalog ("IEEE Xplore")
+% ? unused Url ("https://ieeexplore.ieee.org/abstract/document/10476424")
 
 @inproceedings{li:24:hpca,
   title = {{{LibPreemptible}}: {{Enabling Fast}}, {{Adaptive}}, and {{Hardware-Assisted User-Space Scheduling}}},
@@ -221,9 +329,7 @@
   issn = {2378-203X},
   doi = {10.1109/HPCA57654.2024.00075},
   urldate = {2024-09-05},
-  abstract = {Modern cloud applications are prone to high tail latencies since their requests typically follow highly-dispersive distributions. Prior work has proposed both OS- and systemlevel solutions to reduce tail latencies for microsecond-scale workloads through better scheduling. Unfortunately, existing approaches like customized dataplane OSes, require significant OS changes, experience scalability limitations, or do not reach the full performance capabilities hardware offers. We propose LibPreemptible, a preemptive user-level threading library that is flexible, lightweight, and scalable. LibPreemptible is based on three key techniques: 1) a fast and lightweight hardware mechanism for delivery of timed interrupts, 2) a general-purpose user-level scheduling interface, and 3) an API for users to express adaptive scheduling policies tailored to the needs of their applications. Compared to the prior state-of-the-art scheduling system Shinjuku, our system achieves significant tail latency and throughput improvements for various workloads without the need to modify the kernel. We also demonstrate the flexibility of LibPreemptible across scheduling policies for real applications experiencing varying load levels and characteristics.},
-  keywords = {Adaptive scheduling,cloud computing,Computer architecture,datacenter,Dynamic scheduling,Performance and quality of service,Processor scheduling,Scalability,scheduling,Tail,Throughput},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/FEP67KYX/Li et al_2024_LibPreemptible.pdf;/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/EHYM3GD9/10476424.html}
+  keywords = {Adaptive scheduling,cloud computing,Computer architecture,datacenter,Dynamic scheduling,Performance and quality of service,Processor scheduling,Scalability,scheduling,Tail,Throughput}
 }
 % == BibTeX quality report for li:24:hpca:
 % ? Unsure about the formatting of the booktitle
@@ -244,9 +350,7 @@
   address = {New York, NY, USA},
   doi = {10.1145/3373376.3378451},
   urldate = {2024-09-20},
-  abstract = {Recent advances in memory technologies mean that commodity machines may soon have terabytes of memory; however, such machines remain expensive and uncommon today. Hence, few programmers and researchers can debug and prototype fixes for scalability problems or explore new system behavior caused by terabyte-scale memories.To enable rapid, early prototyping and exploration of system software for such machines, we built and open-sourced the ∅sim simulator. ∅sim uses virtualization to simulate the execution of huge workloads on modest machines. Our key observation is that many workloads follow the same control flow regardless of their input. We call such workloads data-oblivious. 0sim harnesses data-obliviousness to make huge simulations feasible and fast via memory compression.∅sim is accurate enough for many tasks and can simulate a guest system 20-30x larger than the host with 8x-100x slowdown for the workloads we observed, with more compressible workloads running faster. For example, we simulate a 1TB machine on a 31GB machine, and a 4TB machine on a 160GB machine. We give case studies to demonstrate the utility of ∅sim. For example, we find that for mixed workloads, the Linux kernel can create irreparable fragmentation despite dozens of GBs of free memory, and we use ∅sim to debug unexpected failures of memcached with huge memories.},
-  isbn = {978-1-4503-7102-5},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/3IWKHYQJ/Mansi and Swift - 2020 - ∅sim Preparing System Software for a World with Terabyte-scale Memories.pdf}
+  isbn = {978-1-4503-7102-5}
 }
 % == BibTeX quality report for mansi:20:asplos:
 % ? unused Library catalog ("ACM Digital Library")
@@ -262,11 +366,9 @@
   primaryclass = {cs},
   publisher = {arXiv},
   urldate = {2024-08-05},
-  abstract = {External fragmentation of physical memory occurs when adjacent differently sized regions of allocated physical memory are freed at different times, causing free memory to be physically discontiguous. It can significantly degrade system performance and efficiency, such as reducing the ability to use huge pages, a critical optimization on modern large-memory system. For decades system developers have sought to avoid and mitigate fragmentation, but few prior studies quantify and characterize it in production settings.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Computer Science - Operating Systems,Computer Science - Performance,D.4.2},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/DGWZCWZ2/Mansi and Swift - 2024 - Characterizing Physical Memory Fragmentation.pdf}
+  keywords = {Computer Science - Operating Systems,Computer Science - Performance,D.4.2}
 }
 % == BibTeX quality report for mansi:24:arxiv:
 % ? Title looks like it was stored in title-case in Zotero
@@ -285,59 +387,106 @@
   address = {New York, NY, USA},
   doi = {10.1145/3582016.3582063},
   urldate = {2024-09-19},
-  abstract = {CXL Memory was used as an additional Memory Tier.},
   isbn = {978-1-4503-9918-0},
-  keywords = {Chris},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/KK2XRECS/Maruf et al_2023_TPP.pdf}
+  keywords = {Chris}
 }
 % == BibTeX quality report for maruf:23:asplos:
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
 % ? unused Url ("https://dl.acm.org/doi/10.1145/3582016.3582063")
 
-@inproceedings{stavrakakis:24:dsn,
-  title = {{{SPP}}: {{Safe Persistent Pointers}} for {{Memory Safety}}},
-  shorttitle = {{{SPP}}},
-  booktitle = {2024 54th {{Annual IEEE}}/{{IFIP International Conference}} on {{Dependable Systems}} and {{Networks}} ({{DSN}})},
-  author = {Stavrakakis, Dimitrios and Panfil, Alexandrina and Nam, {\relax Mj}in and Bhatotia, Pramod},
-  year = {2024},
-  month = jun,
-  series = {{{DSN}}},
-  pages = {37--52},
-  publisher = {IEEE},
-  address = {Brisbane, Australia},
-  doi = {10.1109/DSN58291.2024.00019},
-  urldate = {2024-09-20},
-  copyright = {https://doi.org/10.15223/policy-029},
-  isbn = {9798350341058},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/UPXULB8F/Stavrakakis et al. - 2024 - SPP Safe Persistent Pointers for Memory Safety.pdf}
+@misc{spec:cxl31,
+  title = {{{CXL}} 3.1 {{Specification}}},
+  year = {2023},
+  month = aug,
+  urldate = {2024-09-25}
 }
-% == BibTeX quality report for stavrakakis:24:dsn:
-% ? Unsure about the formatting of the booktitle
+% == BibTeX quality report for spec:cxl31:
 % ? Title looks like it was stored in title-case in Zotero
-% ? unused Library catalog ("DOI.org (Crossref)")
-% ? unused Url ("https://ieeexplore.ieee.org/document/10646901/")
+% ? unused Committee ("Compute Express Link Consortium Inc.")
+% ? unused Url ("https://computeexpresslink.org/wp-content/uploads/2024/02/CXL-3.1-Specification.pdf")
 
-@inproceedings{suchy:20:pldi2020,
+@article{stark:23:queue,
+  title = {How {{Flexible}} Is {{CXL}}'s {{Memory Protection}}? {{Replacing}} a Sledgehammer with a Scalpel},
+  shorttitle = {How {{Flexible}} Is {{CXL}}'s {{Memory Protection}}?},
+  author = {Stark, Samuel W. and Markettos, A. Theodore and Moore, Simon W.},
+  year = {2023},
+  month = jul,
+  journal = {Queue},
+  volume = {21},
+  number = {3},
+  pages = {54--64},
+  issn = {1542-7730},
+  doi = {10.1145/3606014},
+  urldate = {2024-09-24}
+}
+% == BibTeX quality report for stark:23:queue:
+% ? unused Library catalog ("ACM Digital Library")
+% ? unused Url ("https://dl.acm.org/doi/10.1145/3606014")
+
+@inproceedings{suchy:20:pldi,
   title = {{{CARAT}}: A Case for Virtual Memory through Compiler- and Runtime-Based Address Translation},
   shorttitle = {{{CARAT}}},
   booktitle = {Proceedings of the 41st {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
   author = {Suchy, Brian and Campanoni, Simone and Hardavellas, Nikos and Dinda, Peter},
   year = {2020},
   month = jun,
-  series = {{{PLDI}} 2020},
+  series = {{{PLDI}}},
   pages = {329--345},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
   doi = {10.1145/3385412.3385987},
   urldate = {2024-09-23},
-  abstract = {Virtual memory is a critical abstraction in modern computer systems. Its common model, paging, is currently seeing considerable innovation, yet its implementations continue to be co-designs between power-hungry/latency-adding hardware (e.g., TLBs, pagewalk caches, pagewalkers, etc) and software (the OS kernel). We make a case for a new model for virtual memory, compiler- and runtime-based address translation (CARAT), which instead is a co-design between the compiler and the OS kernel. CARAT can operate without any hardware support, although it could also be retrofitted into a traditional paging model, and could leverage simpler hardware support. CARAT uses compile-time transformations and optimizations combined with tightly-coupled runtime/kernel interaction to generate programs that run efficiently in a physical address space, but nonetheless allow the kernel to maintain protection and dynamically manage physical memory similar to what is possible using traditional virtual memory. We argue for the feasibility of CARAT through an empirical study of application characteristics and kernel behavior, as well as through the design, implementation, and performance evaluation of a CARAT prototype. Because our prototype works at the IR level (in particular, via LLVM bitcode), it can be applied to most C and C++ programs with minimal or no restrictions.},
-  isbn = {978-1-4503-7613-6},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/5RPTLDSW/Suchy et al. - 2020 - CARAT a case for virtual memory through compiler- and runtime-based address translation.pdf}
+  isbn = {978-1-4503-7613-6}
 }
-% == BibTeX quality report for suchy:20:pldi2020:
+% == BibTeX quality report for suchy:20:pldi:
 % ? unused Library catalog ("ACM Digital Library")
 % ? unused Url ("https://dl.acm.org/doi/10.1145/3385412.3385987")
+
+@techreport{suchy:22:tr,
+  type = {Technical {{Report}}},
+  title = {Revisiting {{Software-based Memory Management}}},
+  author = {Suchy, Brian},
+  year = {2022},
+  month = sep,
+  number = {NU-CS-2022-10},
+  institution = {Northwestern University}
+}
+
+@article{turner:75:bp,
+  title = {Inhibition of Aldehyde Reductase by Acidic Metabolites of the Biogenic Amines},
+  author = {Turner, A. J. and Hick, P. E.},
+  year = {1975},
+  month = sep,
+  journal = {Biochemical Pharmacology},
+  volume = {24},
+  number = {18},
+  pages = {1731--1733},
+  issn = {0006-2952},
+  doi = {10.1016/0006-2952(75)90016-7},
+  langid = {english},
+  pmid = {16},
+  keywords = {Aldehyde Oxidoreductases,Animals,Biogenic Amines,Brain,Homovanillic Acid,In Vitro Techniques,Kinetics,NADP,Pyrimidines,Sheep}
+}
+% == BibTeX quality report for turner:75:bp:
+% ? unused Journal abbreviation ("Biochem Pharmacol")
+% ? unused Library catalog ("PubMed")
+
+@inproceedings{wang:23:,
+  title = {{{BWoS}}: {{Formally Verified Block-based Work Stealing}} for {{Parallel Processing}}},
+  shorttitle = {{{BWoS}}},
+  booktitle = {17th {{USENIX Symposium}} on {{Operating Systems Design}} and {{Implementation}} ({{OSDI}} 23)},
+  author = {Wang, Jiawei and Trach, Bohdan and Fu, Ming and Behrens, Diogo and Schwender, Jonathan and Liu, Yutao and Lei, Jitang and Vafeiadis, Viktor and H{\"a}rtig, Hermann and Chen, Haibo},
+  year = {2023},
+  pages = {833--850},
+  urldate = {2024-09-25},
+  isbn = {978-1-939133-34-2},
+  langid = {english}
+}
+% == BibTeX quality report for wang:23::
+% ? Unsure about the formatting of the booktitle
+% ? unused Library catalog ("www.usenix.org")
+% ? unused Url ("https://www.usenix.org/conference/osdi23/presentation/wang-jiawei")
 
 @inproceedings{wang:23:osdi,
   title = {{{BWoS}}: {{Formally Verified Block-based Work Stealing}} for {{Parallel Processing}}},
@@ -349,10 +498,18 @@
   pages = {833--850},
   urldate = {2024-09-05},
   isbn = {978-1-939133-34-2},
-  langid = {english},
-  file = {/home/stettberger/.zotero/zotero/zotero.profile/zotero/storage/9YAUIXZE/Wang et al_2023_ BWoS .pdf}
+  langid = {english}
 }
 % == BibTeX quality report for wang:23:osdi:
 % ? Unsure about the formatting of the booktitle
 % ? unused Library catalog ("www.usenix.org")
 % ? unused Url ("https://www.usenix.org/conference/osdi23/presentation/wang-jiawei")
+
+@inproceedings{zhou:25:cidr,
+  title = {{{OLTP Through}} the {{Looking Glass}} 16 {{Years Later}}: {{Communication}} Is the {{New Bottleneck}}},
+  author = {Zhou, Zinjing and Leis, Viktor and Yu, Ziangyao and Stonebraker, Michael},
+  year = {2025},
+  series = {{{CIDR}}}
+}
+% == BibTeX quality report for zhou:25:cidr:
+% Missing required field 'booktitle'

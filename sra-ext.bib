@@ -729,7 +729,8 @@
   year = 2005,
   institution = {{OSEK/VDX} Group},
   category = {os-embedded},
-  note = {\url{http://portal.osek-vdx.org/files/pdf/specs/os223.pdf}, visited 2014-09-29}
+  url = {http://portal.osek-vdx.org/files/pdf/specs/os223.pdf},
+  urldate = {2014-09-29},
 }
 
 @techreport{ORTISpecA22,
@@ -1202,7 +1203,7 @@
 @techreport{POSIX:17,
   institution = {ISO},
   journal = {IEEE Std 1003.1-2017},
-  title = {Portable Operating System Interface ({POSIX}{\textregistered}) Base Specifications, Issue 7},
+  title = {Portable Operating System Interface ({POSIX®}) Base Specifications, Issue 7},
   year = {2018},
   url = {https://pubs.opengroup.org/onlinepubs/9699919799/nframe.html}
 }
@@ -1210,14 +1211,14 @@
 @techreport{POSIX:98,
   institution = {ISO},
   journal = {IEEE Std 1003.13-1998},
-  title = {Portable Operating System Interfaces ({POSIX}{\textregistered}) -- Part 1: System Application Program Interface (API) -- Amendment 1: Realtime Extension},
+  title = {Portable Operating System Interfaces ({POSIX®}) -- Part 1: System Application Program Interface (API) -- Amendment 1: Realtime Extension},
   number = {9945},
   year = {1998}
 }
 
 @techreport{POSIX:88,
   institution = {ISO},
-  title = {Portable Operating System Interface ({POSIX}{\textregistered}) Base Specifications},
+  title = {Portable Operating System Interface ({POSIX®}) Base Specifications},
   number = {9945},
   year = {1988}
 }
@@ -1526,6 +1527,7 @@
 @phdthesis{scheler:11:phd,
   author = {Fabian Scheler},
   url = {http://opus4.kobv.de/opus4-fau/files/1740/FabianSchelerDissertation.pdf},
+  x-pdf = {https://open.fau.de/bitstreams/0ee9e05e-4c6c-4ec7-82e1-b5671ec08c3a/download},
   school = {Friedrich-Alexander-Universit{\"a}t Erlangen-N{\"u}rnberg, Technische Fakult{\"a}t},
   title = {{Atomic Basic Blocks: Eine Abstraktion f{\"u}r die gezielte Manipulation der Echtzeitsystemarchitektur}},
   year = 2011
@@ -4475,6 +4477,18 @@
   year = {2014}
 }
 
+@inproceedings{franzmann:15:echtzeit,
+  author="Franzmann, Florian and Klaus, Tobias and Scheler, Fabian and Schr{\"o}der-Preikschat, Wolfgang and Ulbrich, Peter",
+  editor="Halang, Wolfgang A. and Spinczyk, Olaf",
+  title="React in Time: Ereignisbasierter Entwurf zeitgesteuerter verteilter Systeme",
+  booktitle="Betriebssysteme und Echtzeit",
+  year="2015",
+  publisher="Springer Berlin Heidelberg",
+  address="Berlin, Heidelberg",
+  pages="89--98",
+  isbn="978-3-662-48611-5",
+}
+
 @inproceedings{panic:14:codesisss,
   author = {Pani\'{c}, Milo\v{s} and Kehr, Sebastian and Qui\~{n}ones, Eduardo and Boddecker, Bert and Abella, Jaume and Cazorla, Francisco J.},
   title = {RunPar: An Allocation Algorithm for Automotive Applications Exploiting Runnable Parallelism in Multicores},
@@ -5026,7 +5040,8 @@
   isbn = {978-1-4503-0113-8},
   venue = {TaiChung, Taiwan},
   publisher = {ACM Press},
-  address = {New York, NY, USA}
+  address = {New York, NY, USA},
+  x-pdf = {https://www4.cs.fau.de/Publications/2011/ulbrich_11_sac.pdf},
 }
 
 @inproceedings{korsholm:11:jtres,
@@ -16849,7 +16864,8 @@ numpages     = {8}
   title = {From Intent to Effect: Tool-Based Generation of Time-Triggered Real-Time Systems on Multi-Core Processors},
   crossref = {isorc:16},
   doi = {10.1109/ISORC.2016.27},
-  pages = {134--141}
+  pages = {134--141},
+  x-pdf = {https://www4.cs.fau.de/Publications/2016/franzmann_16_isorc.pdf},
 }
 
 @inproceedings{dhungana:11:splc,
@@ -18966,6 +18982,7 @@ series = {ASPLOS XVII}
 }
 
 @book{misrac:04,
+  author = {{MIRA Limited}},
   key = {MISRAC},
   title = {Guidelines for the Use of the C Language in Critical Systems (MISRA-C:2004)},
   year = 2004,
@@ -29180,6 +29197,24 @@ doi = {10.1145/361598.361623},
   doi={10.1109/RTAS.2019.00034}
 }
 
+@inproceedings{schuster:21:lctes,
+  author = {Schuster, Simon and W\"{a}gemann, Peter and Ulbrich, Peter and Schr\"{o}der-Preikschat, Wolfgang},
+  title = {Annotate once – analyze anywhere: context-aware WCET analysis by user-defined abstractions},
+  year = {2021},
+  isbn = {9781450384728},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3461648.3463847},
+  doi = {10.1145/3461648.3463847},
+  booktitle = {Proceedings of the 22nd ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems},
+  pages = {54–66},
+  numpages = {13},
+  keywords = {WCET analysis, annotation language, context sensitivity, control-flow-relation graphs},
+  location = {Virtual, Canada},
+  series = {LCTES 2021},
+  x-pdf = {https://dl.acm.org/doi/pdf/10.1145/3461648.3463847}
+}
+
 @inproceedings{vu:16:tase,
   author = {Dieu{-}Huong Vu and
                Yuki Chiba and
@@ -30644,7 +30679,7 @@ doi = {10.1145/361598.361623},
 
 @online{ArgoUML,
   key = {argouml},
-  title = {ArgoUML | ArgoUML resources and web pages.},
+  title = {ArgoUML \| ArgoUML resources and web pages.},
   author = {Linus Tolke and Vincenzo Palazzo},
   urldate = {2024-08-08},
   year = {2024},
@@ -34650,6 +34685,66 @@ numpages = {7}
   keywords =     {loaders, storage allocation and segmentation, multiprogramming, overlay techniques}
 }
 
+@article{vaas:19:sps,
+  author = {Vaas, Steffen and Ulbrich, Peter and Reichenbach, Marc and Fey, Dietmar},
+  title = {Application-Specific Tailoring of Multi-Core SoCs for Real-Time Systems with Diverse Predictability Demands},
+  year = {2019},
+  issue_date = {July 2019},
+  publisher = {Kluwer Academic Publishers},
+  address = {USA},
+  volume = {91},
+  number = {7},
+  issn = {1939-8018},
+  url = {https://doi.org/10.1007/s11265-018-1389-0},
+  doi = {10.1007/s11265-018-1389-0},
+  journal = {Journal of Signal Processing Systems},
+  month = {jul},
+  pages = {773–786},
+  numpages = {14},
+  keywords = {SoC, Safety-Critical, Reliable, Reconfigurable, NoC, Distributed, Deterministic}
+}
+
+@inproceedings{raffeck:19:rtss,
+  author={Raffeck, Phillip and Ulbrich, Peter and Schröder-Preikschat, Wolfgang},
+  booktitle={2019 IEEE Real-Time Systems Symposium (RTSS)}, 
+  title={Work-in-Progress: Migration Hints in Real-Time Operating Systems}, 
+  year={2019},
+  pages={528-531},
+  keywords={Task analysis;Schedules;Operating systems;Real-time systems;Runtime;Optimal scheduling;Multicore processing;Real Time Operating System;Task Migration;Limited Preemptive Scheduling;Static Code Analysis},
+  doi={10.1109/RTSS46320.2019.00056},
+}
+
+@inproceedings{gaukler:19:arch,
+  author    = {Maximilian Gaukler and Peter Ulbrich},
+  title     = {Worst-Case Analysis of Digital Control Loops with Uncertain Input/Output Timing},
+  booktitle = {ARCH19. 6th International Workshop on Applied Verification of Continuous and Hybrid Systems},
+  editor    = {Goran Frehse and Matthias Althoff},
+  series    = {EPiC Series in Computing},
+  volume    = {61},
+  publisher = {EasyChair},
+  issn      = {2398-7340},
+  url       = {https://easychair.org/publications/paper/S4w9},
+  doi       = {10.29007/c4zl},
+  pages     = {183-200},
+  year      = {2019},
+  x-pdf     = {https://easychair.org/publications/paper/S4w9/download},
+}
+
+@inproceedings{vaas:17:dasip,
+ address = {Los Alamitos, CA},
+ author = {Vaas, Steffen and Ulbrich, Peter and Reichenbach, Marc and Fey, Dietmar},
+ booktitle = {Proceedings of the Conference on Design and Architectures for Signal and Image Processing (DASIP '17)},
+ date = {2017-09-27/2017-09-29},
+ doi = {10.1109/DASIP.2017.8122107},
+ isbn = {978-1-5386-3534-6},
+ keywords = {Field programmable gate arrays;Hardware;Multicore processing;Real-time systems;Software;Deterministic;Distributed;NoC;Reconfigurable;Reliable;Safety-Critical;SoC},
+ pages = {1-6},
+ peerreviewed = {Yes},
+ publisher = {IEEE Computer Society Press},
+ title = {The Best of Both: High-performance and Deterministic Real-Time Executive by Application-Specific Multi-Core {SoCs}},
+ venue = {Dresden},
+ year = {2017},
+}
 
 @inproceedings{baker:10:codesisss,
   title =        {A performance model and code overlay generator for scratchpad enhanced embedded processors},

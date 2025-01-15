@@ -33,3 +33,22 @@ Do it with `online`:
 
 There seems not to be a specific field for PDF links (in the BibLaTeX documentation, `url` is the closest but separately printed).
 Therefore, we use an extra field `x-pdf` for that.
+
+### Editions
+
+The edition field is language dependent and it is not clear wheather an extra point is made or not, e.g. compare:
+```
+2. edition
+second edition
+2nd edition
+2 edition
+2. Auflage
+second Auflage
+2 Auflage
+````
+
+Therefore, the preferred way here is the number together with a dot: `edition = {2.},`.
+
+### DOI URLs
+
+Do not write down these URLs! Specify the DOI directly: `doi = {...},`.
